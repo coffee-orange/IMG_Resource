@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+.logo{
+    width: 100%;
+    height:600px;
+    border:  1px solid red;
+    background: url("../sport_images/title_job.jpg") no-repeat ;
+    opacity: .8;
+}
+.mod
+{
+    position:relative;
+    width: 100%;
+    height: 100px;
+    border: 1px solid yellow;
+}
+h1{
+
+    font-size: 50px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: cursive;
+}
+img{
+    width: 336px;
+    height: 280px;
+}
+.banner{
+    width: 600px;
+    height: 300px;
+
+    position: absolute;
+    top: 120px;
+    left: 600px;
+}
+.write_logo{
+    font-size: 36px;
+    font-family: cursive;
+    color: white;
+}
+.temper{
+    color: white;
+    text-align: center;
+
+}
+.first{
+position: absolute;
+    border: 1px solid blue;
+    height: 370px;
+    width: 100%;
+    font-size: 20px;
+    float: left;
+    display: block;
+}
+
+.first_one{
+    position: relative;
+    margin-top: 10px;
+    height: 360px;
+    width: 336px;
+    border: 1px solid black;
+    float: left;
+    margin-left:20px ;
+    transition: .9s;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.first_one:hover{
+
+    box-shadow: 0px 10px 15px rgba(0,0,0,.6);
+    transform: translate3d(0px,-5px,0px);
+}
+.first_one .bottom-ad{
+    text-align: center;
+    width: 336px;
+    height: 80px;
+    background-color: #999998;
+    position: absolute;
+    bottom:-100px;
+    transition: .9s;
+
+}
+.first_one:hover .bottom-ad{
+    bottom: 0px;
+}
+
+.first_two{
+
+    margin-top: 10px;
+    height: 360px;
+    width: 336px;
+    border: 1px solid black;
+    float: left;
+    margin-left: 145px;
+    background-color:white;
+    position: relative;
+    transition: .9s;
+    overflow: hidden;
+}
+.first_two:hover{
+    transform: translate3d(0px,-5px,0px);
+    box-shadow: 0px 10px 15px rgba(0,0,0,.6);
+}
+.first_two .bottom-ad{
+    width: 336px;
+    height: 80px;
+    background-color: #999998;
+    position: absolute;
+    bottom:-100px;
+    transition: .9s;
+
+}
+.first_two:hover .bottom-ad{
+    bottom: 0px;
+}
+ul li{
+    list-style: none;
+}
+.commit{
+    position: absolute;
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 5px;
+}
+.bask_logo{
+    background: url("../sport_images/basketball_logo.jpg");
+    width: 20px;
+    height: 20px;
+
+}
+
+.first_three{
+    position: relative;
+    margin-top: 10px;
+    margin-left:145px ;
+    height: 360px;
+    width: 336px;
+    border: 1px solid black;
+    float: left;
+    transition: .9s;
+    white-space: nowrap;
+overflow: hidden;
+}
+.first_three:hover{
+
+    margin-top: 10px;
+    height:360px;
+    width: 336px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,.6);
+    transform: translate3d(0px,-5px,0px);
+}
+
+
+.first_three .bottom-ad{
+    width: 336px;
+    height: 80px;
+    background-color: #999998;
+    position: absolute;
+    bottom:-100px;
+    transition: .9s;
+
+}
+.first_three:hover .bottom-ad{
+    bottom: 0px;
+}
+ ul li{
+    list-style: none;
+}
+ .commit{
+    color: #404040;
+     text-align:center;
+    font-size: 22px;
+   margin-top: 8px;
+ }
+ .write{
+     position: relative;
+     top: 7px;
+     color: #404040;
+     text-align:center;
+ }
+.bask_logo img{
+
+    width: 22px;
+    height: 22px;
+}
