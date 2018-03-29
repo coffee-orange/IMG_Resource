@@ -1,0 +1,312 @@
+       /*消除页面默认布局*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+        /*页面总框架的定义*/
+
+.container{
+    height: 1800px;
+    width: 100%;
+    position: relative;
+}
+
+        /*头部的定义*/
+
+.head{
+    height: 60px;
+    width: 100%;
+    border: 1px solid;
+}
+
+        /*logo的定义*/
+.head .headpic{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background: url("../mainpage_images/logo.png") no-repeat;
+    background-size: contain;
+    margin: 0 14%;
+
+}
+
+        /*头部导航栏的定义*/
+.head .head_nav{
+    height: 40px;
+    width: 70%;
+    position: absolute;
+    margin: 10px 19%;
+    border: 1px solid;
+}
+
+.head .head_navleft{
+    height: 30px;
+    width: 15%;
+    position: absolute;
+    top: 5px;
+}
+.head_navleft span{
+    height: 30px;
+    width: 40%;
+    background-color: #15D168;
+    display: block;
+    float: left;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.head_navleft span:hover{
+    background-color: mediumseagreen;
+}
+
+.head .head_navright{
+    height: 30px;
+    width: 35%;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    margin-left: 5%;
+}
+
+.head_navright span{
+    display: block;
+    height: 30px;
+    width: 25%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    float: left;
+    margin-left: 5%;
+    background-color: #15D168;
+    text-align: center;
+    line-height: 30px;
+    transition: 1s;
+}
+
+.head_navright span:hover{
+    background-color: mediumseagreen;
+}
+
+.head a:link{
+    color: white;
+}
+.head a:visited{
+    color: white;
+}
+
+    /*中间内容区定义*/
+.content{
+    width: 90%;
+    height: 1550px;
+    margin: 1% auto;
+    border: 1px solid;
+    position: relative;
+}
+    /*轮播图区域*/
+.content .carouselfigure{
+    height: 250px;
+    width: 80%;
+    border: 1px solid;
+    margin:0 auto;
+}
+.content .beautyare{
+    height: 300px;
+    width: 90%;
+    border:1px solid;
+    margin: 20px auto;
+}
+.beautyare .beautyareleft{
+    height: 280px;
+    width: 30%;
+    border: 1px solid;
+    float: left;
+    margin: 10px 20px;
+}
+.beautyare .beautyareright{
+    height: 280px;
+    width: 60%;
+    border: 1px solid;
+    float: right;
+    margin: 10px 20px;
+}
+.beautyareleft h3{
+    line-height: 60px;
+    text-indent: 2em;
+}
+.beautyareleft p{
+    line-height: 30px;
+    text-indent: 3em;
+}
+.content .manare{
+    height: 300px;
+    width: 90%;
+    border: 1px solid;
+    margin: 20px auto;
+}
+.manare  .manareleft{
+    height: 280px;
+    width: 60%;
+    border: 1px solid;
+    float: left;
+    margin: 10px 20px;
+}
+.manare .manareright{
+    height: 280px;
+    width: 30%;
+    border: 1px solid;
+    float: right;
+    margin: 10px 20px;
+}
+.manareright h3{
+    line-height: 60px;
+    text-indent: 10em;
+}
+.manareright p{
+    line-height: 30px;
+    text-align: right;
+    padding-right: 4em;
+}
+.content .firmare{
+    height: 300px;
+    width: 90%;
+    border: 1px solid;
+    margin: 20px auto;
+}
+.firmare .firmareleft{
+    height: 280px;
+    width: 30%;
+    border: 1px solid;
+    float: left;
+    margin: 10px 20px;
+}
+.firmare .firmareright{
+    height: 280px;
+    width: 60%;
+    border: 1px solid;
+    float: right;
+    margin: 10px 20px;
+}
+.firmareleft h3{
+    line-height: 60px;
+    text-indent: 2em;
+}
+.firmareleft p{
+    line-height: 30px;
+    text-indent: 3em;
+}
+.content .staticare{
+    height: 300px;
+    width: 90%;
+    border: 1px solid;
+    margin: 20px auto;
+}
+.staticare .staticareleft{
+    height: 280px;
+    width: 60%;
+    border: 1px solid;
+    float: left;
+    margin: 10px 20px;
+}
+.staticareright{
+    height: 280px;
+    width: 30%;
+    border: 1px solid;
+    margin: 10px 20px;
+    float: right;
+}
+.staticareright h3{
+    line-height: 60px;
+    text-indent: 10em;
+}
+.staticareright p{
+    line-height: 30px;
+    text-align: right;
+    padding-right: 4em;
+}
+        /*尾部区域的定义*/
+.foot{
+    height: 200px;
+    width: 80%;
+    border: 1px solid;
+    margin: 10px auto;
+}
+.foot .foot_top{
+    text-align: center;
+    color: silver;
+    height: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid;
+}
+.foot .foot_center{
+    height: 100px;
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid;
+}
+.foot_center ul{
+    height: 80px;
+    width: 15%;
+    list-style: none;
+    border: 1px solid;
+    float: left;
+    margin: 10px 19px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+.foot_center a:link{
+    color: gray;
+}
+.foot_center a:visited{
+    color: gray;
+}
+.foot .foot_bottom{
+    height: 60px;
+    width: 80%;
+    border: 1px solid;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 12px;
+}
+.foot_bottom span{
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin: 10px 12px;
+    float: left;
+    border: 1px solid;
+    line-height: 40px;
+}
+.right_nav{
+    position: fixed;
+    height: 200px;
+    width: 60px;
+    border: 1px solid;
+    top: 60%;
+    right: 1%;
+}
+.right_nav ul{
+    list-style: none;
+}
+.right_nav ul li{
+    height: 30px;
+    width: 50px;
+    border: 1px solid;
+    margin: 7px 4px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+}
+.right_nav a:link{
+    color: black;
+}
+.right_nav a:visited{
+    color: black;
+}
