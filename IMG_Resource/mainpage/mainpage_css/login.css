@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container{
+    width: 95%;
+    height: 700px;
+    position: relative;
+    margin: 0 auto;
+}
+.head{
+    height: 60px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.head .headpic{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background: url("../mainpage_images/logo.png") no-repeat;
+    background-size: contain;
+    margin: 0 14%;
+
+}
+.head_nav{
+    height: 40px;
+    width: 70%;
+    position: absolute;
+    margin: 10px 20%;
+    border: 1px solid;
+}
+
+.head .head_navleft{
+    height: 30px;
+    width: 15%;
+    position: absolute;
+    top: 5px;
+}
+.head_navleft span{
+    height: 30px;
+    width: 60%;
+    background-color: #15D168;
+    display: block;
+    float: left;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.head_navleft span:hover{
+    background-color: mediumseagreen;
+}
+
+.head .head_navright{
+    height: 30px;
+    width: 35%;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    margin-left: 5%;
+}
+
+.head_navright span{
+    display: block;
+    height: 30px;
+    width: 25%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    float: right;
+    margin-left: 5%;
+    background-color: #15D168;
+    text-align: center;
+    line-height: 30px;
+    transition: 1s;
+}
+
+.head_navright span:hover{
+    background-color: mediumseagreen;
+}
+
+.head a:link{
+    color: white;
+}
+.head a:visited{
+    color: white;
+}
+.content{
+    height: 600px;
+    width: 90%;
+    border: 1px solid;
+    margin: 5px auto;
+}
+.content .lg_box{
+    height: 400px;
+    width: 600px;
+    border: 1px solid;
+    margin: 100px 450px;
+    border-radius: 10px;
+}
+.lg_box span{
+
+}
+
+.foot{
+    height: 60px;
+    width: 80%;
+    border: 1px solid;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 12px;
+}
+.foot span{
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin: 10px 12px;
+    float: left;
+    border: 1px solid;
+    line-height: 40px;
+}
