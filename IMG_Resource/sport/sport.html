@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>体育</title>
+    <title>SPORT WORLD</title>
     <link href="sport_css/Sport.css" rel="stylesheet">
     <style type="text/css">
 
@@ -12,6 +12,80 @@
 <div class="all">
 
   <div class="logo">
+      <script type="text/javascript">
+          window.onload=function(){
+              var wrap=document.getElementById('wrap'),
+                      pic=document.getElementById('pic'),
+                      list=document.getElementById('list').getElementsByTagName('li'),
+                      index=0,
+                      timer=null;
+
+              // 定义并调用自动播放函数
+              function autoPlay(curpic){
+                  clearInterval(timer);
+                  index = curpic;
+                  timer = setInterval(function(){
+                      showPic(index);
+                      select(index);
+                      index++;
+                      if(index>=list.length){
+                          index=0;
+                      }
+                  },1500);
+              }
+              autoPlay(0);
+              // 定义图片切换函数
+              function showPic(curindex){
+                  pic.style.top = '-'+curindex*600+'px';
+              }
+              // 鼠标划过整个容器时停止自动播放
+              for(var i =0;i<list.length;i++){
+                  list[i].index = i;
+                  list[i].onmouseover = function(){
+                      clearInterval(timer);
+                      select(this.index);
+                      showPic(this.index);
+                  }
+                  list[i].onmouseout = function(){
+                      select(this.index);
+                      autoPlay(this.index);
+                  }
+              }
+              function select(current){
+                  for(var j=0;j<list.length;j++){
+                      list[j].className = "";
+                  }
+                  list[current].className="on";
+              }
+              wrap.onmouseover = function(){
+                  clearInterval(timer);
+              }
+              wrap.onmouseout = function(){
+                  autoPlay(index);
+              }
+              // 鼠标离开整个容器时继续播放至下一张
+
+              // 遍历所有数字导航实现划过切换至对应的图片
+          }
+
+      </script>
+      </head>
+      <body>
+      <div class="wrap">
+          <ul id="pic">
+              <li><img src="sport_images/logo_one.jpg" alt=""></li>
+              <li><img src="sport_images/logo_two.jpg" alt=""></li>
+              <li><img src="sport_images/logo_three.jpg" alt=""></li>
+              <li><img src="sport_images/logo_four.jpg" alt=""></li>
+              <li><img src="" alt=""></li>
+          </ul>
+          <ol id="list">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+          </ol>
 <div class="banner">
     <p class="write_logo">Sport is the source of all life</p>
     <p class="temper">Long-term physical problems make the bright future with dark, and strong vitality
@@ -42,12 +116,13 @@
 
        </div>
 </div>
+
 <div class="first_two">
 <img src="sport_images/sort_twtrtf.jpg">
     <ul>
         <li>
             <p class="write"><span class="bask_logo"><img src="sport_images/basketball_logo.jpg"></span>The famous NBA star</p>
-            <p class="commit">Kobe Bryant</p>
+            <p class="commit">Dwyane Wade</p>
         </li>
     </ul>
     <div class="bottom-ad">
@@ -74,47 +149,102 @@
                 </li>
         </div>
     </div>
+    <div class="first_four">
+        <img src="sport_images/fort_four.jpg"  >
+        <ul>
+            <li>
+                <p class="write"><span class="bask_logo"><img src="sport_images/basketball_logo.jpg"></span>The famous NBA star</p>
+                <p class="commit">LeBron James</p>
+            </li>
+        </ul>
+        <div class="bottom-ad">
+            <ul>
+                <li>
+                    <p class="write"><span class="bask_logo"></span> It is all the love of my life.</p>
+                    <p class="commit">------Basketball </p>
+                </li>
+
+        </div>
+    </div>
 </div>
-<!--<div class="float"></div>-->
-    <!--<div class="second">-->
+<div class="float"></div>
+    <div class="second">
+        <div class="second_one">
+            <img src="sport_images/sort_four.jpg"  >
+            <ul>
+                <li>
+                    <p class="write"><span class="bask_logo"><img src="sport_images/basketball_logo.jpg"></span>The famous NBA star</p>
+                    <p class="commit">Timothy Theodore Duncan</p>
+                </li>
+            </ul>
+            <div class="bottom-ad">
+                <ul>
+                    <li>
+                        <p class="write"><span class="bask_logo"></span> It is all the love of my life.</p>
+                        <p class="commit">------Basketball </p>
+                    </li>
 
-        <!--<div class="second_one">-->
-            <!--<img src="sport_images/sort_four.jpg">-->
-            <!-- -->
-        <!--</div>-->
+            </div>
+        </div>
 
-        <!--<div class="second_two">-->
-            <!--<img src="sport_images/sort_five.jpg">-->
-        <!--</div>-->
+        <div class="second_two">
+            <img src="sport_images/sort_five.jpg"  >
+            <ul>
+                <li>
+                    <p class="write"><span class="bask_logo">
+                        <img src="sport_images/football_logo.jpg"></span>The famous football player</p>
+                    <p class="commit">Frank Lampard</p>
+                </li>
+            </ul>
+            <div class="bottom-ad">
+                <ul>
+                    <li>
+                        <p class="write"><span class="bask_logo"></span> It is all the love of my life.</p>
+                        <p class="commit">------Football </p>
+                    </li>
 
-        <!--<div class="second_three">-->
-            <!--<img src="sport_images/fort_six.jpg">-->
+            </div>
+        </div>
 
-        <!--</div>-->
-        <!--<div class="third">-->
-            <!--<div class="third_one">-->
-                <!--<img src="sport_images/fort_seven.jpg">-->
-            <!--</div>-->
-            <!--<div class="third_two">-->
-                <!--<img src="sport_images/fort_eight.jpg">-->
-            <!--</div>-->
-            <!--<div class="third_three">-->
-                <!--<img src="sport_images/sort_nine.jpg">-->
-            <!--</div>-->
-            <!--<div class="img4">-->
-                <!--<div class="img4-1">-->
-                    <!--<img src="sport_images/sort_ten.jpg">-->
-                <!--</div>-->
-                <!--<div class="img4-2">-->
-                    <!--<img src="sport_images/sort_eleven.jpg">-->
-                <!--</div>-->
-                <!--<div class="img4-3">-->
-                    <!--<img src="sport_images/sort_twelve.jpg">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="second_three">
+            <img src="sport_images/sort_nine.jpg"  >
+            <ul>
+                <li>
+                    <p class="write"><span class="bask_logo">
+                        <img src="sport_images/swimming_logo.jpg"></span>The famous swimmer</p>
+                    <p class="commit">Sun Yang</p>
+                </li>
+            </ul>
+            <div class="bottom-ad">
+          <ul>
+          <li>
+    <p class="write"><span class="bask_logo"></span> It is all the love of my life.</p>
+         <p class="commit">------Swimming </p>
+     </li>
+            </div>
+        </div>
+        <div class="second_one">
+            <img src="sport_images/fort_eight.jpg"  >
+            <ul>
+                <li>
+                    <p class="write"><span class="bask_logo"><img src="sport_images/basketball_logo.jpg"></span>The famous NBA star</p>
+                    <p class="commit">Carmelo Anthony</p>
+                </li>
+            </ul>
+            <div class="bottom-ad">
+                <ul>
+                    <li>
+                        <p class="write"><span class="bask_logo"></span> It is all the love of my life.</p>
+                        <p class="commit">------Basketball </p>
+                    </li>
+
+            </div>
+        </div>
+        </div>
+    <div class="float"></div>
+
     </div>
 
-</div>
+
 </body>
 </html>
