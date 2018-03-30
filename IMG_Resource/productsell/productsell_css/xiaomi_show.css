@@ -4,6 +4,10 @@
     /*font:12px "\5B8B\4F53",san-serif;*/
     font-family: Microsoft Yahei;
 }
+body{
+    background: #f5f5f5;
+}
+
 
 ol, ul {
     list-style: none;
@@ -16,7 +20,9 @@ ol, ul {
 .f14px {
     font-size: 14px;
 }
-
+.fB{
+    font-weight: bold;
+}
 .left {
     float: left;
 }
@@ -73,22 +79,28 @@ ol, ul {
 
 .p1 {
     width: 214px;
-    height: 20.8px;
+    height: 23px;
     /*font-size: 14px;*/
     font-weight: 400;
     text-align: center;
     margin-left: 9px;
     font-family: Microsoft Yahei;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 
 .p2 {
     width: 214px;
-    height: 20.8px;
+    height: 20px;
     margin: 0 9px 8px;
     /*font-size: 12px;*/
     color: #b0b0b0;
     text-align: center;
     font-family: sans-serif;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 
 .p3 {
@@ -100,6 +112,9 @@ ol, ul {
     color: #ff6700;
     text-align: center;
     font-family: sans-serif;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 
 /*产品展示框hover的实现*/
