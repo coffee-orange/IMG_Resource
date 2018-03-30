@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>xiaomi_show</title>
+    <link href="productsell_css/xiaomi_show.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        /*网页的主容器*/
+        .container_main {
+            width: 1226px;
+            height: 4000px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        /*产品的第二个展示框*/
+        .container_sell_show2 {
+            width: 1226px;
+            height: 686px;
+            position: relative;
+        }
+
+        .container_main, .container_main .container_sell_show2, .container_sell_show2 * {
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        /*顶部框*/
+        .box_top {
+            width: 1226px;
+            height: 58px;
+        }
+
+        .box_top .title {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 200;
+            line-height: 58px;
+            color: #333;
+            display: block;
+
+        }
+
+        .tab_nav_container {
+            width: 305px;
+            height: 42px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .tab_ul {
+            width: 305px;
+            height: 42px;
+            display: block;
+            box-sizing: border-box;
+            padding-top: 16px;
+        }
+
+        .tab_ul li {
+            margin-left: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            display: inline-block;
+            color: #424242;
+        }
+
+        .tab_ul li:hover {
+            color: #ff6700;
+            border-bottom: 2px solid #ff6700;
+        }
+
+        /*图片展示总外壳*/
+        .pic_box_all {
+            width: 1226px;
+            height: 628px;
+        }
+
+        .pic_box_left {
+            width: 234px;
+            height: 628px;
+            float: left;
+        }
+
+        .pic_box_left ul {
+            width: 248px;
+            height: 614px;
+        }
+
+        .pic_box_left li {
+            margin-bottom: 14px;
+            width: 234px;
+            height: 300px;
+        }
+
+        .pic_box_left img {
+            width: 234px;
+            height: 300px;
+            transition: all .2s linear;
+        }
+
+        .pic_box_right {
+            width: 990px;
+            height: 624px;
+
+            float: left;
+
+        }
+
+        .pic_box_right ul {
+            width: 990px;
+            height: 624px;
+        }
+
+        .pic_box_right li {
+            margin-bottom: 14px;
+            width: 234px;
+            height: 300px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 34px 0 20px 0;
+            margin-left: 9px;
+        }
+
+        .pic_box_right .pic_content {
+            width: 150px;
+            height: 150px;
+            margin: 0 42px 18px 42px
+        }
+
+        .pic_box_right img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .pic_container {
+            position: relative;
+            overflow: hidden;
+            transition: all .2s linear;
+        }
+
+        .pic_container .bottom_ad {
+            width: 234px;
+            height: 120px;
+            background: #ff6700;
+            position: absolute;
+            bottom: -120px;
+            transition: all .2s linear;
+        }
+
+        .pic_container:hover .bottom_ad {
+            bottom: -20px;
+        }
+
+        .pic_box_left img:hover, .pic_container:hover {
+            margin-top: -2px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .ul_hot {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .ul_tv {
+            position: absolute;
+            z-index: -1;
+            display: none;
+        }
+
+        .tv:hover .ul_hot {
+            display: none;
+            z-index: -1;
+        }
+
+        .tv:hover .ul_tv {
+            display: block;
+            z-index: 5;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container_main">
+    <!--产品展示方式1-->
+    <div class="container_sell_show1">
+        <!--左边展示框-->
+        <div class="left_col left">
+            <img src="productsell_images/xmad_15216357268058_WITRO.jpg"/>
+        </div>
+        <!--右边展示框-->
+        <div class="right_col left">
+            <!--右边第一行展示框-->
+            <div class="right1_row left">
+                <div class="product_content">
+                    <img src="productsell_images/pms_1510019402.48089978!220x220.jpg"/>
+
+                    <p class="p1 f14px">商 品 名</p>
+
+                    <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                    <p class="p3"><span>——</span>元</p>
+                </div>
+                <div class="product_content">
+                    <img src="productsell_images/pms_1509723338.05097112!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+                <div class="product_content">
+                    <img src="productsell_images/pms_1511228654.33099308!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+                <div class="product_content">
+                    <img src="productsell_images/pms_1508850965.67096774!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+            </div>
+            <!--右边第二行展示框-->
+            <div class="right2_row left">
+                <div class="product_content">
+                    <img src="productsell_images/pms_1508125822.19716710!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+                <div class="product_content">
+                    <img src="productsell_images/pms_1492069048.69778776!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+                <div class="product_content">
+                    <img src="productsell_images/pms_1512612024.50854166!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+                <div class="product_content">
+                    <img src="productsell_images/pms_1505733360.02538108!220x220.jpg"/>
+
+                    <p class="p1 f14px">小米6 4GB+64GB</p>
+
+                    <p class="p2 f12px">变焦双摄，4轴防抖，骁龙835 处理器</p>
+
+                    <p class="p3"><span>2299</span>元</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--产品展示方式2-->
+    <div class="container_sell_show2">
+        <div class="box_top">
+            <h2 class="title">展示产品总类别</h2>
+
+            <div class="tab_nav_container">
+                <ul class="tab_ul">
+                    <li class="hot">热门</li>
+                    <li class="tv">电视影音</li>
+                    <li class="computer">电脑</li>
+                    <li class="house">家居</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pic_box_all">
+            <div class="pic_box_left">
+                <ul>
+                    <li><img src="productsell_images/pic_iHealth.jpg" alt=""/></li>
+                    <li><img src="productsell_images/pic_sdrobot.jpg" alt=""/></li>
+                </ul>
+            </div>
+            <div class="pic_box_right">
+                <ul class="ul_hot">
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_tv1.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_tv2.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_computer3.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_computer4.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_jhq5.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_sh6.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_jhq2s7.png" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_syj8.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+
+                </ul>
+                <ul class="ul_tv">
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_tv1.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">变了</p>
+
+                        <p class="p2 f12px">变了</p>
+
+                        <p class="p3"><span>变了</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_tv2.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_computer3.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_computer4.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_jhq5.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_sh6.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_jhq2s7.png" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+                    <li class="pic_container">
+                        <div class="pic_content">
+                            <img src="productsell_images/pic_syj8.jpg" alt=""/>
+                        </div>
+                        <p class="p1 f14px">商 品 名</p>
+
+                        <p class="p2 f12px">主 要 功 能 和 优 势</p>
+
+                        <p class="p3"><span>——</span>元</p>
+
+                        <p class="bottom_ad"></p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Microsoft Yahei";
 }
 .container{
-    width: 95%;
+    width: 1250px;
     height: 700px;
     position: relative;
     margin: 0 auto;
@@ -98,13 +99,100 @@
 }
 .content .lg_box{
     height: 400px;
-    width: 600px;
+    width: 500px;
     border: 1px solid;
-    margin: 100px 450px;
+    margin: 100px 600px;
     border-radius: 10px;
 }
-.lg_box span{
+.lg_box .ac_num{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 50px auto;
+    line-height: 60px;
+    font-size: 14.7px;
+    text-align: center;
+}
+.ac_num input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    font-size: 12px;
+    outline: none;
+    margin-top: 0;
+    margin-left: 15px;
+    padding-left: 10px;
+    transition: 0.5s;
 
+}
+.ac_num span{
+    font-weight: 600;
+}
+.ac_num input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.ac_num input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.lg_box .pw_num{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 50px auto;
+    line-height: 60px;
+    font-size: 14.7px;
+    text-align: center;
+}
+.pw_num span{
+    font-weight: 600;
+}
+.pw_num input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    font-size: 12px;
+    outline: none;
+    margin-top: 0;
+    margin-left: 15px;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.pw_num input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.pw_num input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.hangon{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: -40px auto;
+    line-height: 60px;
+    font-size: 14.7px;
+    text-indent: 2em;
+}
+.hangon input{
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-size: 14.7px;
+    border: 1px solid transparent;
+    background-color: #00ca4c;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 40px;
+    outline: none;
+    transition: 1s;
+}
+.hangon input:hover{
+    background-color: rgba(46,119,87,.9);
 }
 
 .foot{
