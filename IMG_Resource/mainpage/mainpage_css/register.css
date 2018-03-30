@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Microsoft Yahei";
+}
+.container{
+    width: 1250px;
+    height: 700px;
+    position: relative;
+    margin: 0 auto;
+}
+.head{
+    height: 60px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.head .headpic{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background: url("../mainpage_images/logo.png") no-repeat;
+    background-size: contain;
+    margin: 0 14%;
+
+}
+.head_nav{
+    height: 40px;
+    width: 70%;
+    position: absolute;
+    margin: 10px 20%;
+    border: 1px solid;
+}
+
+.head .head_navleft{
+    height: 30px;
+    width: 15%;
+    position: absolute;
+    top: 5px;
+}
+.head_navleft span{
+    height: 30px;
+    width: 60%;
+    background-color: #15D168;
+    display: block;
+    float: left;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.head_navleft span:hover{
+    background-color: mediumseagreen;
+}
+
+.head .head_navright{
+    height: 30px;
+    width: 35%;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    margin-left: 5%;
+}
+
+.head_navright span{
+    display: block;
+    height: 30px;
+    width: 25%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    float: right;
+    margin-left: 5%;
+    background-color: #15D168;
+    text-align: center;
+    line-height: 30px;
+    transition: 1s;
+}
+
+.head_navright span:hover{
+    background-color: mediumseagreen;
+}
+
+.head a:link{
+    color: white;
+}
+.head a:visited{
+    color: white;
+}
+.content{
+    height: 600px;
+    width: 90%;
+    border: 1px solid;
+    margin: 5px auto;
+}
+.content .contentleft{
+    height: 550px;
+    width: 50%;
+    font-size: 14.7px;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid silver;
+    margin: 20px 10px;
+    float: left;
+}
+.contentleft .ac_num{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin-top: 25px;
+    margin-left: 100px;
+    text-indent: 4em;
+    line-height: 60px;
+}
+.ac_num input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.ac_num input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.ac_num input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.contentleft .pw_num{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 100px;
+    text-indent: 4em;
+    line-height: 60px;
+}
+.pw_num input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.pw_num input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.pw_num input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.contentleft .rpw_num{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 100px;
+    text-indent: 0em;
+    line-height: 60px;
+}
+.rpw_num input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.rpw_num input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.rpw_num input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.contentleft .email{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 100px;
+    text-indent: 4em;
+    line-height: 60px;
+}
+.email input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.email input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.email input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.contentleft .phone{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 100px;
+    text-indent: 2em;
+    line-height: 60px;
+}
+.phone input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    margin-left: 15px;
+    padding-left: 10px;
+
+}
+.phone input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.phone input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.contentleft .ph_check{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 100px;
+    text-indent: 1em;
+    line-height: 60px;
+}
+.ph_check input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid silver;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.ph_check input:hover{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.ph_check input:focus{
+    border:1px solid lightgreen;
+    box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
+}
+.contentleft .hangon{
+    width: 400px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 100px;
+    text-align: center;
+    line-height: 60px;
+}
+.hangon input{
+    outline: none;
+    width: 80px;
+    height: 40px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #00ca4c;
+    border-radius: 10px;
+    transition: 1s;
+}
+.hangon input:hover{
+    background-color: rgba(46,119,87,.9);
+}
+.content .contentright{
+    height: 550px;
+    width: 40%;
+    border: 1px solid;
+    float: right;
+    margin: 20px 40px;
+    font-size: 12px;
+    color: gray;
+}
+.contentright .ac_num{
+    width: 300px;
+    height: 60px;
+    border: 1px solid;
+    margin-top: 25px;
+    margin-left: 80px;
+    line-height: 60px;
+}
+.contentright .pw_num{
+    width: 300px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 80px;
+    line-height: 60px;
+}
+.contentright .rpw_num{
+    width: 300px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 80px;
+    line-height: 60px;
+}
+.contentright .email{
+    width: 300px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 80px;
+    line-height: 60px;
+}
+.contentright .phone{
+    width: 300px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 80px;
+    line-height: 60px;
+}
+.contentright .ph_check{
+    width: 300px;
+    height: 60px;
+    border: 1px solid;
+    margin: 10px 80px;
+    line-height: 60px;
+}
+.foot{
+    height: 60px;
+    width: 80%;
+    border: 1px solid;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 12px;
+}
+.foot span{
+    display: block;
+    width: 30%;
+    height: 40px;
+    margin: 10px 12px;
+    float: left;
+    border: 1px solid;
+    line-height: 40px;
+}

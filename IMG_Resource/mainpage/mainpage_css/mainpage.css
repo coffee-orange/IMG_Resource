@@ -3,14 +3,16 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Microsoft Yahei";
 }
 
         /*页面总框架的定义*/
 
 .container{
     height: 1800px;
-    width: 100%;
+    width: 1250px;
     position: relative;
+    margin: 0 auto;
 }
 
         /*头部的定义*/
@@ -19,6 +21,7 @@
     height: 60px;
     width: 100%;
     border: 1px solid;
+    font-size: 14.7px;
 }
 
         /*logo的定义*/
@@ -107,6 +110,7 @@
     margin: 1% auto;
     border: 1px solid;
     position: relative;
+    font-size: 14.7px;
 }
     /*轮播图区域*/
 .content .carouselfigure{
@@ -165,7 +169,7 @@
 }
 .manareright h3{
     line-height: 60px;
-    text-indent: 10em;
+    text-indent: 11em;
 }
 .manareright p{
     line-height: 30px;
@@ -222,7 +226,7 @@
 }
 .staticareright h3{
     line-height: 60px;
-    text-indent: 10em;
+    text-indent: 11em;
 }
 .staticareright p{
     line-height: 30px;
@@ -243,6 +247,7 @@
     width: 80%;
     margin: 0 auto;
     border: 1px solid;
+    font-size: 14.7px;
 }
 .foot .foot_center{
     height: 100px;
