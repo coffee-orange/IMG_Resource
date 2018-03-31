@@ -1,32 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    /*font:12px "\5B8B\4F53",san-serif;*/
-    font-family: Microsoft Yahei;
-}
-body{
-    background: #f5f5f5;
-}
-
-
-ol, ul {
-    list-style: none;
-}
-
-.f12px {
-    font-size: 12px;
-}
-
-.f14px {
-    font-size: 14px;
-}
-.fB{
-    font-weight: bold;
-}
-.left {
-    float: left;
-}
-
+/*产品的第一个展示框*/
 .container_sell_show1 {
     margin-top: 50px;
     width: 1226px;
@@ -62,7 +34,6 @@ ol, ul {
     margin-left: 14px;
     margin-bottom: 14px;
     text-align: center;
-    box-shadow: 0;
     float: left;
     transition: all .2s linear;
     cursor: pointer;
