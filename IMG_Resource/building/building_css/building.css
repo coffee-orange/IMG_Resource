@@ -1,0 +1,155 @@
+
+/*顶部标题容器*/
+.top_title {
+    padding-bottom: 30px;
+    display:block;
+    min-width:745px;
+    margin:0 auto;
+}
+
+.top_title h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.top_title p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 33px;
+    margin: 25px 100px 30px 100px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.52);
+}
+
+/*图片最外层容器*/
+.figure_wrapper {
+    width: 966px;
+    height: 323px;
+    margin: 0 auto;
+}
+.figure_wrapper .figure_content:nth-child(2) {
+    margin-left: 1px;
+}
+/*图片容器，图片，以及figcaption的大小*/
+.figure_content, .figure_content img, .figure_content figcaption {
+    width: 482px;
+    height: 322px;
+    text-align: center;
+    cursor: pointer;
+}
+.figure_content {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    background: #000;
+    margin-bottom: 1px;
+    float: left;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.figure_wrapper .figure_content img{
+    transition: opacity 0.35s;
+
+}
+
+.figure_content {
+    position: relative;
+}
+
+.figure_content figcaption::before,
+.figure_content figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.figure_content figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.figure_content figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+.figure_content h2 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 30%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+
+.figure_content p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+/*图片hover的实现,利用opacity实现透明度的转换*/
+.figure_content:hover img {
+    opacity: 0.4;
+}
+
+/*边框的实现使用了伪类before做上下边，after做左右边，transform:scale(x,y)实现边的延长*/
+.figure_content:hover figcaption::before,
+.figure_content:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.figure_content:hover h2,
+.figure_content:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*屏幕尺寸改变，图片随着改变*/
+@media only screen and (max-width : 990px){
+    .figure_content, .figure_content img, .figure_content figcaption {
+        width: 745px;
+        height: 496px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .figure_wrapper .figure_content:nth-child(2) {
+        margin-left: 0px;
+    }
+    .figure_wrapper {
+        width: 745px;
+        height: 496px;
+        margin: 0 auto;
+    }
+}
