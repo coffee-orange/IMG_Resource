@@ -19,20 +19,38 @@ a:visited {text-decoration:none;}
 a:hover {color:#ba2636;text-decoration:underline;}
 a:active {color:#ba2636;}
 
+/* 右侧栏条(修饰作用) */
+.vertical-Bar{
+    width: 5px;
+    height: 980px;
+    background-color: #b0b0b0;
+    position: fixed;
+    right: 0px;
+    z-index: 2000;
+}
+
+/* 头部 */
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #b0b0b0;
+}
 
 /* 主内容区样式 */
 #container{
     width: 88%;
     height: auto;
     margin: 0 auto;
-    /*border: 1px dashed blue;*/
+    position: relative;
+    /*border: 1px dashed blue;  /!*测试*!/*/
 }
+/* 图片设置 */
 #container .box{
-    padding: 15px;
+    padding: 30px 18px 0px;
     float: left;
 }
 #container .box .box_img{
-    width: 250px;
+    width: 360px;
     height: auto;
     padding: 5px;
     border: 2px solid #ccc;
@@ -43,15 +61,17 @@ a:active {color:#ba2636;}
     overflow: hidden;
 }
 #container .box .box_img img{
-    width: 250px;
+    width: 360px;
     height: auto;
 }
 #container .box .box_img:hover{
     transform: translate3d(-2px,-6px,0px);
     box-shadow: 0px 10px 12px rgba(0,0,0,.3);
 }
+
+/* 图片隐藏内容设置 */
 #container .box .box_img .bottom_hidden{
-    width: 250px;
+    width: 360px;
     height: 40px;
     background-color: rgba(165, 165, 165, 0.5);
     position: absolute;
@@ -66,4 +86,67 @@ a:active {color:#ba2636;}
 #container .box .box_img:hover .bottom_hidden{
     bottom: 5px;
 }
+/* 至2018-3-29 22:00提交 */
 
+/* 图片下载图标设置 */
+#container .box .bottom_hidden .LSArtWorld a{
+    color: rgb(185, 253, 255);
+    text-decoration:none;
+    transition: 0.6s;
+}
+#container .box .bottom_hidden .LSArtWorld a:hover{
+    color: #ff0000;
+}
+#container .box .bottom_hidden .LSArtWorld a{
+
+}
+
+
+/* 侧栏 */
+.sidebar{
+    position: fixed;
+    right: 0;
+    top: 330px;
+    width: 60px;
+    height: 180px;
+    /*border: 1px dashed black;*//*测试*/
+}
+.sidebar .backWord{
+    width: 60px;
+    height: 23px;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 23px;
+    background-color: #b0b0b0;
+    border-radius: 6px 0 0 6px;
+    border-bottom: 1px solid white;
+    transition: 0.8s;
+    display: block;
+}
+.sidebar .sidebarBox{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #b0b0b0;
+    border-radius: 6px 0 0 6px;
+    transition: 0.8s;
+}
+.sidebar .sidebarBox .iconfont{
+    font-size: 36px;
+}
+.sidebar .backTopBox{
+    margin-bottom: 60px;
+}
+.sidebar .backTopBox:hover{
+    border-radius: 30px;
+    background-color: #424242;
+}
+.sidebar .backIndex_a{
+    color: black;
+    text-decoration: none;
+}
+.sidebar .backIndex_a .backIndexBox:hover{
+    border-radius: 30px;
+    background-color: #424242;
+}
