@@ -3,6 +3,13 @@
     padding: 0;
     text-decoration: none;
     font-family: "Microsoft Yahei";
+    background-color: #f6f8f9;
+}
+a{
+    background-color: transparent;
+}
+form{
+    background-color: transparent;
 }
 .container{
     width: 1250px;
@@ -13,7 +20,9 @@
 .head{
     height: 60px;
     width: 100%;
-    border: 1px solid;
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow: 0 10px 40px 1px gray;
 }
 
 .head .headpic{
@@ -30,7 +39,8 @@
     width: 70%;
     position: absolute;
     margin: 10px 20%;
-    border: 1px solid;
+    border: 1px solid transparent;
+    background-color: white;
 }
 
 .head .head_navleft{
@@ -38,6 +48,7 @@
     width: 15%;
     position: absolute;
     top: 5px;
+    background-color: transparent;
 }
 .head_navleft span{
     height: 30px;
@@ -65,6 +76,7 @@
     top: 4px;
     right: 0;
     margin-left: 5%;
+    background-color: transparent;
 }
 
 .head_navright span{
@@ -92,37 +104,48 @@
     color: white;
 }
 .content{
-    height: 600px;
-    width: 90%;
-    border: 1px solid;
-    margin: 5px auto;
+    height: 650px;
+    width: 100%;
+    border: 1px solid transparent;
+    margin: 1px auto;
+    background: url("../mainpage_images/login_background.jpg") 0 -1150px no-repeat;
+    opacity: 0.7;
+    background-size: cover;
 }
-.content .contentleft{
-    height: 550px;
-    width: 50%;
-    font-size: 14.7px;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-right: 1px solid silver;
-    margin: 20px 10px;
-    float: left;
-}
-.contentleft .ac_num{
+.content .contentcenter{
+    height: 560px;
     width: 400px;
-    height: 60px;
-    border: 1px solid;
-    margin-top: 25px;
-    margin-left: 100px;
-    text-indent: 4em;
-    line-height: 60px;
+    font-size: 14.7px;
+    border: 1px solid transparent;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+.content input{
+    background-color: transparent;
+}
+.content span{
+    background-color: transparent;
+}
+.content label{
+    background-color: transparent;
+}
+.contentcenter .ac_num{
+    width: 380px;
+    height: 40px;
+    border: 1px solid transparent;
+    margin-top: 50px;
+    margin-left: 5px;
+    text-indent: 2em;
+    line-height: 40px;
+    background-color: white;
 }
 .ac_num input{
-    width: 200px;
+    width: 250px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
-    margin-left: 15px;
+    margin-left: 28px;
     padding-left: 10px;
 }
 .ac_num input:hover{
@@ -133,20 +156,30 @@
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
-.contentleft .pw_num{
-    width: 400px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 100px;
-    text-indent: 4em;
-    line-height: 60px;
+.contentcenter .ac_num_help{
+    width: 300px;
+    height: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 30px;
+    background-color: transparent;
+}
+.contentcenter .pw_num{
+    width: 380px;
+    height: 40px;
+    border: 1px solid transparent;
+    margin-left: 5px;
+    text-indent: 2em;
+    line-height: 40px;
+    background-color: white;
 }
 .pw_num input{
-    width: 200px;
+    width: 250px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
-    margin-left: 15px;
+    margin-left: 28px;
     padding-left: 10px;
 }
 .pw_num input:hover{
@@ -157,20 +190,30 @@
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
-.contentleft .rpw_num{
+.contentcenter .pw_num_help{
     width: 400px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 100px;
-    text-indent: 0em;
-    line-height: 60px;
+    height: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 30px;
+    background-color: transparent;
+}
+.contentcenter .rpw_num{
+    width: 380px;
+    height: 40px;
+    border: 1px solid transparent;
+    margin-left: 5px;
+    text-indent: 1em;
+    line-height: 40px;
+    background-color: white;
 }
 .rpw_num input{
-    width: 200px;
+    width: 250px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
-    margin-left: 15px;
+    margin-left: 14px;
     padding-left: 10px;
 }
 .rpw_num input:hover{
@@ -181,20 +224,30 @@
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
-.contentleft .email{
-    width: 400px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 100px;
-    text-indent: 4em;
-    line-height: 60px;
+.contentcenter .rpw_num_help{
+    width: 300px;
+    height: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 30px;
+    background-color: transparent;
+}
+.contentcenter .email{
+    width: 380px;
+    height: 40px;
+    border: 1px solid transparent;
+    margin-left: 5px;
+    text-indent: 2em;
+    line-height: 40px;
+    background-color: white;
 }
 .email input{
-    width: 200px;
+    width: 250px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
-    margin-left: 15px;
+    margin-left: 28px;
     padding-left: 10px;
 }
 .email input:hover{
@@ -205,16 +258,26 @@
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
-.contentleft .phone{
-    width: 400px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 100px;
-    text-indent: 2em;
-    line-height: 60px;
+.contentcenter .email_help{
+    width: 300px;
+    height: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 30px;
+    background-color: transparent;
+}
+.contentcenter .phone{
+    width: 380px;
+    height: 40px;
+    border: 1px solid transparent;
+    margin: 0px 5px;
+    text-indent: 1em;
+    line-height: 40px;
+    background-color: white;
 }
 .phone input{
-    width: 200px;
+    width: 250px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
@@ -230,20 +293,21 @@
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
-.contentleft .ph_check{
-    width: 400px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 100px;
-    text-indent: 1em;
-    line-height: 60px;
+.contentcenter .ph_check{
+    width: 380px;
+    height: 30px;
+    border: 1px solid transparent;
+    margin: 0px 5px;
+    text-indent: 8px;
+    line-height: 30px;
+    background-color: white;
 }
 .ph_check input{
-    width: 200px;
+    width: 250px;
     height: 30px;
     outline: none;
     border: 1px solid silver;
-    margin-left: 15px;
+    margin-left: 9px;
     padding-left: 10px;
 }
 .ph_check input:hover{
@@ -254,13 +318,31 @@
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
-.contentleft .hangon{
-    width: 400px;
+.contentcenter .phone_help{
+    width: 300px;
+    height: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 30px;
+    background-color: transparent;
+}
+.contentcenter .ph_check_help{
+    width: 300px;
+    height: 30px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    margin-left: 100px;
+    line-height: 30px;
+    background-color: transparent;
+}
+.contentcenter .hangon{
+    width: 300px;
     height: 60px;
-    border: 1px solid;
-    margin: 10px 100px;
+    margin: 0px auto;
     text-align: center;
     line-height: 60px;
+    background-color: transparent;
 }
 .hangon input{
     outline: none;
@@ -275,72 +357,24 @@
 .hangon input:hover{
     background-color: rgba(46,119,87,.9);
 }
-.content .contentright{
-    height: 550px;
-    width: 40%;
-    border: 1px solid;
-    float: right;
-    margin: 20px 40px;
-    font-size: 12px;
-    color: gray;
-}
-.contentright .ac_num{
-    width: 300px;
-    height: 60px;
-    border: 1px solid;
-    margin-top: 25px;
-    margin-left: 80px;
-    line-height: 60px;
-}
-.contentright .pw_num{
-    width: 300px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 80px;
-    line-height: 60px;
-}
-.contentright .rpw_num{
-    width: 300px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 80px;
-    line-height: 60px;
-}
-.contentright .email{
-    width: 300px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 80px;
-    line-height: 60px;
-}
-.contentright .phone{
-    width: 300px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 80px;
-    line-height: 60px;
-}
-.contentright .ph_check{
-    width: 300px;
-    height: 60px;
-    border: 1px solid;
-    margin: 10px 80px;
-    line-height: 60px;
+.contentcenter p{
+    background-color: transparent;
 }
 .foot{
-    height: 60px;
-    width: 80%;
-    border: 1px solid;
+    height: 30px;
+    width: 100%;
+    border: 1px solid transparent;
     margin: 5px auto;
     text-align: center;
     font-size: 12px;
+    color: gray;
 }
 .foot span{
     display: block;
     width: 30%;
-    height: 40px;
+    height: 20px;
     margin: 10px 12px;
     float: left;
-    border: 1px solid;
-    line-height: 40px;
+    border: 1px solid transparent;
+    line-height: 20px;
 }
