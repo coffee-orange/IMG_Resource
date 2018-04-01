@@ -1,3 +1,4 @@
+                                    /*消除默认布局,定义初始布局*/
 *{
     margin: 0;
     padding: 0;
@@ -11,12 +12,14 @@ a{
 form{
     background-color: transparent;
 }
+                                    /*定义外框*/
 .container{
     width: 1250px;
     height: 700px;
     position: relative;
     margin: 0 auto;
 }
+                                    /*定义头部区域*/
 .head{
     height: 60px;
     width: 100%;
@@ -24,7 +27,7 @@ form{
     background-color: white;
     box-shadow: 0 10px 40px 1px gray;
 }
-
+                                    /*头部LOGO区*/
 .head .headpic{
     height: 60px;
     width: 60px;
@@ -34,6 +37,7 @@ form{
     margin: 0 14%;
 
 }
+                                    /*头部导航区*/
 .head_nav{
     height: 40px;
     width: 70%;
@@ -103,6 +107,7 @@ form{
 .head a:visited{
     color: white;
 }
+                                /*定义中部内容区*/
 .content{
     height: 650px;
     width: 100%;
@@ -130,6 +135,7 @@ form{
 .content label{
     background-color: transparent;
 }
+                        /*账号部分定义*/
 .contentcenter .ac_num{
     width: 380px;
     height: 40px;
@@ -165,6 +171,7 @@ form{
     line-height: 30px;
     background-color: transparent;
 }
+                        /*密码部分定义*/
 .contentcenter .pw_num{
     width: 380px;
     height: 40px;
@@ -199,6 +206,7 @@ form{
     line-height: 30px;
     background-color: transparent;
 }
+                            /*确认密码区域定义*/
 .contentcenter .rpw_num{
     width: 380px;
     height: 40px;
@@ -233,6 +241,7 @@ form{
     line-height: 30px;
     background-color: transparent;
 }
+                            /*邮箱部分定义*/
 .contentcenter .email{
     width: 380px;
     height: 40px;
@@ -267,6 +276,7 @@ form{
     line-height: 30px;
     background-color: transparent;
 }
+                            /*手机号码部分定义*/
 .contentcenter .phone{
     width: 380px;
     height: 40px;
@@ -293,6 +303,7 @@ form{
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
 }
+                            /*手机验证码区域定义*/
 .contentcenter .ph_check{
     width: 380px;
     height: 30px;
@@ -336,6 +347,7 @@ form{
     line-height: 30px;
     background-color: transparent;
 }
+                            /*确认按钮区域定义*/
 .contentcenter .hangon{
     width: 300px;
     height: 60px;
@@ -360,6 +372,7 @@ form{
 .contentcenter p{
     background-color: transparent;
 }
+                                /*底部定义*/
 .foot{
     height: 30px;
     width: 100%;

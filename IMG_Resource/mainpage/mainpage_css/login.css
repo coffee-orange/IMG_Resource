@@ -1,3 +1,4 @@
+                        /*清除布局*/
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +6,14 @@
     font-family: "Microsoft Yahei";
     background: #f6f8f9;
 }
+                        /*定义主区*/
 .container{
     width: 1250px;
     height: 700px;
     position: relative;
     margin: 0 auto;
 }
+                        /*定义头部*/
 .head{
     height: 60px;
     width: 100%;
@@ -18,7 +21,7 @@
     background-color: white;
     box-shadow: 0px 10px 40px 1px gray;
 }
-
+                    /*定义头部LOGO*/
 .head .headpic{
     height: 60px;
     width: 60px;
@@ -28,6 +31,7 @@
     margin: 0 14%;
 
 }
+                    /*头部导航栏*/
 .head_nav{
     height: 40px;
     width: 70%;
@@ -36,7 +40,7 @@
     border: 1px solid transparent;
     background-color: transparent;
 }
-
+                    /*头部导航栏左侧区域*/
 .head .head_navleft{
     height: 30px;
     width: 15%;
@@ -57,14 +61,14 @@
     font-size: 16px;
     transition: 1s;
 }
-
+                    /*触发变色效果*/
 .head_navleft span:hover{
     background-color: mediumseagreen;
 }
 .head a{
     background-color: transparent;
 }
-
+                    /*定义导航栏右侧区域*/
 .head .head_navright{
     height: 30px;
     width: 35%;
@@ -100,6 +104,7 @@
 .head a:visited{
     color: white;
 }
+                        /*定义中部内容区*/
 .content{
     height: 600px;
     width: 100%;
@@ -109,6 +114,7 @@
     background-size: cover;
 
 }
+                    /*中部内容区登陆模块*/
 .content .lg_box{
     height: 300px;
     width: 450px;
@@ -166,6 +172,7 @@
     font-size: 28px;
     color: #cbcbcb;
 }
+                    /*输入框变色效果的定义*/
 .ac_num input:hover{
     border:1px solid lightgreen;
     box-shadow: 0 0 1px 1px rgba(64,64,64,.3);
@@ -219,6 +226,7 @@
     text-indent: 2em;
     background-color: transparent;
 }
+                        /*登陆按钮的定义*/
 .hangon input{
     width: 100px;
     height: 30px;
@@ -235,7 +243,7 @@
 .hangon input:hover{
     background-color: rgba(46,119,87,.9);
 }
-
+                        /*定义底部区域*/
 .foot{
     height: 30px;
     width: 100%;
