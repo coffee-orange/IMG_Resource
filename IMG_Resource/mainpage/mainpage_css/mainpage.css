@@ -496,20 +496,40 @@
     height: 500px;
     width: 1200px;
 }
-                                /*风景区定义*/
-.content .beautyare{
+       /*展示区统一长宽属性*/
+        .show_content{
+            height: 328px;
+            width: 1066px;
+            margin: 10px auto;
+            border:1px solid red;
+            box-sizing: border-box;
+        }
+        .show_content *{
+            border:1px solid red;
+            box-sizing: border-box;
+        }
+        .show_content_left{
+            height: 325px;
+            width: 486px;
+            float: left;
+        }
+        .show_content_right{
+            height: 325px;
+            width: 578px;
+            float: left;
+        }
+        .show_content_right img{
+            height: 323px;
+            width: 576px;
+        }
+       /*第一个building展示模板css*/
+.content .building{
     height: 328px;
     width: 1066px;
-    /*border:1px solid red;*/
-    /*box-sizing: border-box;*/
     margin: 10px auto;
-    /*background: snow;*/
 }
-/*.beautyare *{*/
-    /*border:1px solid red;*/
-    /*box-sizing: border-box;*/
-/*}*/
-.beautyare .beautyareleft{
+
+.building .buildingleft{
     height: 325px;
     width: 486px;
     float: left;
@@ -517,7 +537,7 @@
     border:1px solid rgba(177, 177, 177, 0.64);
     box-sizing: border-box;
 }
-.beautyare .beautyareright{
+.building .buildingright{
     height: 325px;
     width: 578px;
     float: left;
@@ -525,121 +545,33 @@
     box-sizing: border-box;
     /*background: transparent;*/
 }
-.beautyareright img{
+.buildingright img{
     height: 323px;
     width: 576px;
 }
-.beautyareleft h3{
-    line-height: 60px;
-    text-indent: 2em;
-    background: transparent;
-}
-.beautyareleft p{
-    line-height: 30px;
-    text-indent: 3em;
-    background: transparent;
-    color: gray;
-}
-                                /*男人区定义*/
-.content .manare{
-    height: 300px;
-    width: 95%;
-    border: 1px solid transparent;
-    margin: 20px auto;
-}
-.manare  .manareleft{
-    height: 280px;
-    width: 60%;
-    border: 1px solid transparent;
-    float: left;
-    margin: 10px 20px;
-}
-.manare .manareright{
-    height: 280px;
-    width: 30%;
-    border: 1px solid transparent;
-    float: right;
-    margin: 10px 20px;
-}
-.manareright h3{
-    line-height: 60px;
-    text-indent: 14em;
-}
-.manareright p{
-    line-height: 30px;
-    text-align: right;
-    padding-right: 4em;
-}
-                                        /*影视区定义*/
-.content .firmare{
-    height: 300px;
-    width: 95%;
-    border: 1px solid transparent;
-    margin: 20px auto;
-    background-color: transparent;
-}
-.firmare .firmareleft{
-    height: 280px;
-    width: 30%;
-    border: 1px solid transparent;
-    float: left;
-    margin: 10px 20px;
-    background-color: transparent;
-}
-.firmare .firmareright{
-    height: 280px;
-    width: 60%;
-    border: 1px solid transparent;
-    float: right;
-    margin: 10px 20px;
-    background-color: transparent;
-}
-.firmareleft h3{
-    line-height: 60px;
-    text-indent: 2em;
-    background-color: transparent;
-}
-.firmareleft p{
-    line-height: 30px;
-    text-indent: 3em;
-    background-color: transparent;
-}
-                                        /*静态区定义*/
-.content .staticare{
-    height: 300px;
-    width: 95%;
-    border: 1px solid transparent;
-    margin: 20px auto;
-    background-color: snow;
-}
-.staticare .staticareleft{
-    height: 280px;
-    width: 60%;
-    border: 1px solid transparent;
-    float: left;
-    margin: 10px 20px;
-    background-color: transparent;
-}
-.staticareright{
-    height: 280px;
-    width: 30%;
-    border: 1px solid transparent;
-    margin: 10px 20px;
-    float: right;
-    background-color: transparent;
-}
-.staticareright h3{
-    line-height: 60px;
-    text-indent: 14em;
-    background-color: transparent;
-}
-.staticareright p{
-    line-height: 30px;
-    text-align: right;
-    padding-right: 4em;
-    background-color: transparent;
-}
-        /*尾部区域的定义*/
+
+       /*第二个展示模板css*/
+
+
+       /*第三css个展示*/
+
+
+       /*第四个展示模板*/
+
+
+       /*第五个展示模板*/
+
+
+       /*第六个展示模板*/
+
+
+       /*第七个展示模板*/
+
+
+       /*第八个展示模板*/
+
+
+       /*尾部区域的定义*/
 .foot{
     height: 200px;
     width: 80%;
