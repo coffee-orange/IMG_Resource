@@ -1,0 +1,300 @@
+ol, ul {
+    list-style: none;
+}
+
+.f12px {
+    font-size: 12px;
+}
+
+.f14px {
+    font-size: 14px;
+}
+.fB{
+    font-weight: bold;
+}
+/*产品的第二个展示框*/
+.container_sell_show2 {
+    width: 1226px;
+    height: 686px;
+    position: relative;
+}
+
+
+/*顶部框*/
+.box_top {
+    width: 1226px;
+    height: 58px;
+}
+/*产品类别总称框*/
+.box_top .title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    display: block;
+
+}
+/*顶部导航框*/
+.tab_nav_container {
+    width: 305px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*导航列表*/
+.tab_ul {
+    width: 305px;
+    height: 42px;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 16px;
+}
+
+.tab_ul li {
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    color: #424242;
+}
+
+
+/*图片展示总外壳*/
+.pic_box_all {
+    width: 1226px;
+    height: 628px;
+}
+/*图片左边展示框*/
+.pic_box_left {
+    width: 234px;
+    height: 628px;
+    float: left;
+}
+
+.pic_box_left ul {
+    width: 248px;
+    height: 614px;
+}
+
+.pic_box_left li {
+    margin-bottom: 13px;
+    width: 234px;
+    height: 300px;
+}
+
+.pic_box_left img {
+    width: 234px;
+    height: 300px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+/*图片右边展示框*/
+.pic_box_right {
+    width: 992px;
+    height: 624px;
+    float: left;
+}
+/*图片展示框列表，对应导航栏*/
+.pic_box_right ul {
+    width: 992px;
+    height: 624px;
+}
+
+.pic_box_right li {
+    margin-bottom: 10px;
+    width: 234px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 34px 0 20px 0;
+    margin-left: 9px;
+}
+
+.pic_box_right li:first-child,.pic_box_right li:nth-child(5){
+    margin-left:14px;
+}
+
+/*展示列表容器*/
+.pic_container_li {
+    width: 234px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all .2s linear;
+    background:white;
+}
+/*图片外框*/
+.pic_box_right .pic_content {
+    width: 150px;
+    height: 150px;
+    margin: 0 42px 18px 42px;
+    cursor: pointer;
+}
+
+.pic_box_right img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*底部弹出框*/
+.pic_container_li .bottom_ad {
+    width: 234px;
+    height: 95px;
+    background: #ff6700;
+    position: absolute;
+    box-sizing:border-box;
+    padding:0 20px;
+    bottom: -120px;
+    transition: all .3s linear;
+}
+/*底部弹出效果的hover*/
+.pic_container_li:hover .bottom_ad {
+    bottom: -20px;
+    cursor: pointer;
+}
+/*评价多出的用省略号代替*/
+.bottom_ad span{
+    width: 190px;
+    text-align: left;
+    display:block;
+    margin-top:10px;
+    overflow:hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+
+}
+.bottom_ad_span1{
+    color: #fff3eb;
+    font-size:12px;
+}
+.bottom_ad_span2{
+    color: #ffb381;
+    font-size:12px;
+}
+
+
+/*js实现鼠标滑过菜单栏关键字框出现下滑线,直到选中下个关键字*/
+.Menubox_on {
+    border-bottom: 2px solid #ff6700;
+}
+/*js实现鼠标滑过菜单栏字体变色*/
+.tab_ul .color{
+    color: #ff6700;
+}
+/*右下角的展示框*/
+.pic_container_final{
+    padding:0;
+    display:inline-block;
+    position:relative;
+
+
+}
+
+/*图片内容框*/
+.pic_content_final{
+    width:234px;
+    height:143px;
+    position:relative;
+    top:-35px;
+    transition: all .2s linear;
+    cursor:pointer;
+    background:white;
+}
+.pic_content_final:first-child{
+    margin-bottom:13px;
+}
+
+/*右边图片和图标的大小*/
+.pic_content_final img,.pic_content_final a{
+    width:80px;
+    height:80px;
+    position:absolute;
+    top: 28px;
+    right: 15px;
+}
+.pic_content_final a{
+    text-align: center;
+    line-height: 78px;
+    font-size:50px;
+    font-weight: bold;
+}
+/*字体外包裹框*/
+.font_content{
+    width:94px;
+    height:44px;
+    position:absolute;
+    top: 46px;
+    left: 10px;
+}
+.font_content p{
+    width:94px;
+    text-align: left;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+.p1 {
+    width: 214px;
+    height: 23px;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    text-align: center;
+    margin-left: 9px;
+    font-family: Microsoft Yahei;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.p2 {
+    width: 214px;
+    height: 20px;
+    margin: 0 9px 8px;
+    /*font-size: 12px;*/
+    color: #b0b0b0;
+    text-align: center;
+    font-family: sans-serif;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.p3 {
+    width: 214px;
+    height: 18px;
+    margin: 0 10px 14px;
+    font-size: 13.5px;
+    font-weight: normal;
+    color: #ff6700;
+    text-align: center;
+    font-family: sans-serif;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+/*浏览更多*/
+.font_content .more{
+    font-size:20px;
+    margin-bottom: 5px;
+}
+.icon-rightarrow{
+    font-size:40px;
+    color: #ff6802;
+}
+
+
+
+/*图片浮起加阴影的hover*/
+.pic_box_left img:hover, .pic_container_li:hover , .pic_content_final:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+

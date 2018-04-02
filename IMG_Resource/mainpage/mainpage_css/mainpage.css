@@ -503,26 +503,27 @@
             margin: 10px auto;
             border:1px solid red;
             box-sizing: border-box;
+            position:relative;
         }
         .show_content *{
             border:1px solid red;
             box-sizing: border-box;
         }
-        .show_content_left{
+        .show_content_hover{
             height: 325px;
             width: 486px;
             float: left;
             border:1px solid rgba(177, 177, 177, 0.64);
             box-sizing: border-box;
         }
-        .show_content_right{
+        .show_content_layout{
             height: 325px;
             width: 578px;
             float: left;
             border:1px solid rgba(177, 177, 177, 0.64);
             box-sizing: border-box;
         }
-        .show_content_right img{
+        .show_content_layout img{
             height: 323px;
             width: 576px;
         }
