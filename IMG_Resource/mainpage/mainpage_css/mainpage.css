@@ -512,11 +512,15 @@
             height: 325px;
             width: 486px;
             float: left;
+            border:1px solid rgba(177, 177, 177, 0.64);
+            box-sizing: border-box;
         }
         .show_content_right{
             height: 325px;
             width: 578px;
             float: left;
+            border:1px solid rgba(177, 177, 177, 0.64);
+            box-sizing: border-box;
         }
         .show_content_right img{
             height: 323px;
@@ -524,30 +528,16 @@
         }
        /*第一个building展示模板css*/
 .content .building{
-    height: 328px;
-    width: 1066px;
-    margin: 10px auto;
 }
 
 .building .buildingleft{
-    height: 325px;
-    width: 486px;
-    float: left;
-    background: transparent;
-    border:1px solid rgba(177, 177, 177, 0.64);
-    box-sizing: border-box;
+
 }
 .building .buildingright{
-    height: 325px;
-    width: 578px;
-    float: left;
-    border:1px solid rgba(177, 177, 177, 0.64);
-    box-sizing: border-box;
-    /*background: transparent;*/
+
 }
 .buildingright img{
-    height: 323px;
-    width: 576px;
+
 }
 
        /*第二个展示模板css*/
