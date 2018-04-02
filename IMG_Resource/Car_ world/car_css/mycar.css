@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.all {
+    width: 1350px;
+    height: 4000px;
+    padding-left: 0;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: absolute;
+
+}
+body{
+    width: 1350px;
+    height: 4000px;
+    margin: 0 auto;
+    padding: 0 ;
+    border: 1px solid blue;
+    background: url("../car_images/gragh.gif");
+    background-repeat:repeat-y ;
+    background-size: 1350px 450px;
+}
+.logo{
+    width: 1350px;
+    margin: 10px auto;
+    height: 100px;
+    /*border: 1px solid black;*/
+}
+.logo img{
+    width: 1350px;
+    margin: 0 auto;
+    height: 125px;
+    /*border: 1px solid black;*/
+}
+.logo .font{
+    margin: 18px auto;
+    font-family: cursive;
+    font-size: 44px;
+    color: white;
+    text-align: center;
+    font-weight:800 ;
+}
+.minor{
+    width: 1350px;
+    height: 620px;
+    /*border: 1px solid magenta;*/
+
+}
+ul,li,a,{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+.wrapper{position: relative;margin:0 auto;width: 1350px;height: 620px;}
+.banner{width: 1350px;height:620px;overflow: hidden;}
+.imgList{width:1350px;height:620px;z-index: 10;}
+.imgList li{display: none;}
+.imgList .imgOn{display: inline;}
+.bg{position: absolute;bottom: 0;width: 1350px;height: 72px;z-index:20;opacity: 0.4;filter:alpha(opacity=40);background: black;}
+.infoList{position: absolute;left: 10px;bottom: 10px;z-index: 30;}
+.infoList li{display: none;}
+.infoList .infoOn{display: inline;color: white;}
+.indexList{position: absolute;right: 10px;bottom: 5px;z-index: 30;}
+.indexList li{float: left;margin-right: 8px;background: grey;cursor: pointer;}
+.indexList .indexOn{font-weight: bold;color: white;}
+.aa img{
+    width: 88px;
+    height: 64px;
+}
+.middle{
+    width: 1350px;
+    height: 620px;
+    /*border: 1px solid darkgreen;*/
+    margin: 66px auto;
+}
+.base_one {
+    width: 320px;
+    height: 200px;
+    /*border: 1px solid black;*/
+    margin-left: 10px;
+    margin-top: 8px;
+    float: left;
+}
+.middle img{
+    width: 324px;
+    height: 200px;
+}
+.base_one a{
+    position:relative;
+    width:324px;
+    height:200px;
+    margin:0 ;
+    float:left;
+}
+.base_one a:hover{
+    text-decoration:none;
+    cursor:hand;
+}
+.base_one a span{
+    font-family: cursive;
+    font-size: 26px;
+    display:none;
+    cursor:hand;
+    text-align:center;
+    color:white;
+    line-height:36px;
+    padding:82px 0;
+    font-weight:bold;
+}
+.base_one a:hover span{
+    width:324px;
+    background: rgba(73, 73, 73, 0.56);
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    color:white;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.8;
+    opacity:0.8;
+    align:center;
+}
+.float{
+    height: 12px;
+    clear: left;
+}
+.middle_two{
+    height: 200px;
+    width: 1350px;
+    /*border: 1px solid black;*/
+}
+.middle .first {
+    margin-left: 10px;
+    width: 360px;
+    height: 200px;
+    /*border: 1px solid red;*/
+    float: left;
+}
+.middle .first img{
+    width: 360px;
+    height: 200px;
+}
+.first a{
+    position:relative;
+    width:360px;
+    height:200px;
+    margin:0 ;
+    float:left;
+}
+.first a:hover{
+    text-decoration:none;
+    cursor:hand;
+}
+.first a span{
+    font-family: cursive;
+    font-size: 26px;
+    display:none;
+    cursor:hand;
+    text-align:center;
+    color:white;
+    line-height:36px;
+    padding:82px 0;
+    font-weight:bold;
+}
+.first a:hover span{
+    width:360px;
+    background: rgba(73, 73, 73, 0.56);
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    color:white;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.8;
+    opacity:0.8;
+
+}
+.middle .second {
+    width: 320px;
+    height: 200px;
+    /*border: 1px solid #3c7eff;*/
+    margin-left: 8px;
+    float: left;
+}
+.middle .first img{
+    width: 360px;
+    height: 200px;
+}
+.middle_two .second a{
+    position:relative;
+    width:324px;
+    height:200px;
+    margin:0 ;
+    float:left;
+}
+.middle_two .second a:hover{
+    text-decoration:none;
+    cursor:hand;
+}
+.middle_two .second a span{
+    font-family: cursive;
+    font-size: 26px;
+    display:none;
+    cursor:hand;
+    text-align:center;
+    color:white;
+    line-height:36px;
+    padding:82px 0;
+    font-weight:bold;
+}
+.middle_two .second a:hover span{
+    width:324px;
+    background: rgba(73, 73, 73, 0.56);
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    color:white;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.8;
+    opacity:0.8;
+    align:center;
+}
+.middle_two .third{
+    width: 288px;
+    height: 200px;
+    /*border: 1px solid saddlebrown;*/
+    float: left;
+    margin-left: 8px;
+}
+.middle_two .third img{
+    width: 288px;
+    height: 200px;
+
+}
+.middle_two .third a{
+    position:relative;
+    width:324px;
+    height:200px;
+    margin:0 ;
+    float:left;
+}
+.middle_two .third a:hover{
+    text-decoration:none;
+    cursor:hand;
+}
+.middle_two .third a span{
+    font-family: cursive;
+    font-size: 26px;
+    display:none;
+    cursor:hand;
+    text-align:center;
+    color:white;
+    line-height:36px;
+    padding:82px 0;
+    font-weight:bold;
+}
+.middle_two .third a:hover span{
+    width:324px;
+    background: rgba(73, 73, 73, 0.56);
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    color:white;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.8;
+    opacity:0.8;
+    align:center;
+}
+.middle_three{
+    width: 1650px;
+    height: 200px;
+    /*border: 1px solid darkgreen;*/
+
+    float: left;
+
+}
+.middle_three .third{
+    width: 324px;
+    height: 200px;
+    margin-left: 8px;
+    /*border: 1px solid firebrick;*/
+    float:  left;
+}
+.middle_three .third img{
+    width: 324px;
+    height: 200px;
+
+}
+.middle_three .third a{
+    position:relative;
+    width:324px;
+    height:200px;
+    margin:0 ;
+    float:left;
+}
+.middle_three .third a:hover{
+    text-decoration:none;
+    cursor:hand;
+}
+.middle_three .third a span{
+    font-family: cursive;
+    font-size: 26px;
+    display:none;
+    cursor:hand;
+    text-align:center;
+    color:white;
+    line-height:36px;
+    padding:82px 0;
+    font-weight:bold;
+}
+.middle_three .third a:hover span{
+    width:324px;
+    background: rgba(73, 73, 73, 0.56);
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    color:white;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.8;
+    opacity:0.8;
+    align:center;
+}
