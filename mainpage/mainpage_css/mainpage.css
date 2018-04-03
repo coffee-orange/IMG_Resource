@@ -503,7 +503,6 @@
             margin: 10px auto;
             border:1px solid red;
             box-sizing: border-box;
-            position:relative;
         }
         .show_content *{
             border:1px solid red;
@@ -545,19 +544,116 @@
 
 
        /*第三css个展示*/
+       .middle_three{
+           position: absolute;
+           width: 486px;
+           height: 323px;
+           /*border: 1px solid darkgreen;*/
 
+           float: left;
 
+       }
+       .middle_three .third{
+           /*position: absolute;*/
+           width:486px;
+           height: 323px;
+           /*margin-left: 8px;*/
+           /*border: 1px solid firebrick;*/
+           float:  left;
+       }
+       .middle_three .third img{
+           /*position: relative;*/
+           width: 486px;
+           height: 323px;
+
+       }
+       .middle_three .third p{
+           position:relative;
+           width:486px;
+           height:323px;
+           margin:0 ;
+           float:left;
+       }
+       .middle_three .third p:hover{
+           text-decoration:none;
+           cursor:hand;
+       }
+       .middle_three .third p span{
+           font-family: cursive;
+           font-size: 36px;
+           display:none;
+           cursor:hand;
+           text-align:center;
+           color:white;
+           line-height:36px;
+           padding:150px 0;
+           font-weight:bold;
+       }
+       .middle_three .third p:hover span{
+           width:486px;
+           height: 323px;
+           background: rgba(73, 73, 73, 0.56);
+           display:block;
+           position:absolute;
+           bottom:0px;
+           left:0;
+           color:white;
+           filter:alpha(opacity=60);
+           -moz-opacity:0.8;
+           opacity:0.8;
+           align:center;
+       }
        /*第四个展示模板*/
 
 
        /*第五个展示模板*/
 
-
+       .xiaomi_show .wrapper{
+           width: 234px;
+           height: 300px;
+           margin:10px auto;
+       }
+       .xiaomi_show .show_content_hover{
+           background: #f5f5f5;
+       }
        /*第六个展示模板*/
 
 
        /*第七个展示模板*/
+       .first_one{  position: relative;  height: 325px;
+           width: 486px;  border: 1px solid black;
+           float: left;  transition: .9s;
+           white-space: nowrap;  overflow: hidden;  }
+       .first_one img{  height: 260px;  width: 486px;  }
+       .first_one:hover{
+           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);
+           transform: translate3d(0px,-5px,0px);  }
+       .first_one .bottom-ad{
+           text-align: center;
+           width: 486px;
+           height: 70px;
+           background-color: #999998;
+           position: absolute;
+           bottom:-70px;
+           transition: .9s;
+       }
+       .first_one:hover .bottom-ad {  bottom: 0px;  }
+       .first_two:hover .bottom-ad{  bottom: 0px;  }
+       ul li{  list-style: none;  }
+       .write{
+           position: relative;
 
+           color: #404040;
+           text-align:center;
+           font-size: 20px;
+       }       .bask_logo{  background: url("../sport/sport_images/basketball_logo.jpg");
+                   width: 20px;  height: 20px;  }
+       .commit{  color: #404040;  text-align:center;
+           font-size: 22px;   }
+       .bask_logo img{  width: 22px;  height: 22px;  }
+       .show_content_layout img{
+
+       }
 
        /*第八个展示模板*/
 
