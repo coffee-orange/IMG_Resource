@@ -3,8 +3,133 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link type="text/css" rel="stylesheet" href="movies_css/header.css">
+    <link type="text/css" rel="stylesheet" href="movies_css/content.css">
+    <link type="text/css" rel="stylesheet" href="movies_css/demo.css">
+    <link type="text/css" rel="stylesheet" href="movies_css/normalize.css">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #2e2e2e;
+        }
+        .all{
+            width: 1000px;
+            height: 1800px;
+            margin:0 auto;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
+<div class="all">
+    <div class="header">
+        <div class="top">
+            <div class="top_logo">
+            <img src="movies_images/logo.jpg" width="80px" height="68px">
+            </div>
+            <div class="top_nav">
+                <a class="nav_home">Home</a>
+                <a class="nav_content">Content</a>
+                <a class="nav_about">About</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>复仇者联盟个人集锦</h2>
+        <div class="carousel" >
 
+            <figure style="transform-origin: 50% 50% -75px;transform: rotateY(-3.92699rad);">
+                <img id="iron_man" src="movies_images/1.jpg" height="450px" >
+                <img id="cap" src="movies_images/2.jpg" height="450px">
+                <img  src="movies_images/3.jpg" height="450px">
+                <img  src="movies_images/4.jpg" height="450px">
+                <img  src="movies_images/5.jpg" height="450px">
+                <img  src="movies_images/6.jpg" height="450px">
+                <img  src="movies_images/7.jpg" height="450px">
+                <img  src="movies_images/8.jpg" height="450px">
+            </figure>
+            <nav>
+                <button class="nav prev">Prev</button>
+                <button class="nav next">Next</button>
+            </nav>
+        </div>
+    </div>
+    <script type="text/javascript">
+        'use strict';
+
+        window.addEventListener('load', function () {
+            var carousels = document.querySelectorAll('.carousel');
+
+            for (var i = 0; i < carousels.length; i++) {
+                carousel(carousels[i]);
+            }
+        });
+
+        function carousel(root) {
+            var figure = root.querySelector('figure'),
+                    nav = root.querySelector('nav'),
+                    images = figure.children,
+                    n = images.length,
+                    gap = root.dataset.gap || 0,
+                    bfc = 'bfc' in root.dataset,
+                    theta = 2 * Math.PI / n,
+                    currImage = 0;
+
+            setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+            window.addEventListener('resize', function () {
+                setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+            });
+
+            setupNavigation();
+
+            function setupCarousel(n, s) {
+                var apothem = s / (2 * Math.tan(Math.PI / n));
+
+                figure.style.transformOrigin = '50% 50% ' + -apothem + 'px';
+
+                for (var i = 0; i < n; i++) {
+                    images[i].style.padding = gap + 'px';
+                }for (i = 1; i < n; i++) {
+                    images[i].style.transformOrigin = '50% 50% ' + -apothem + 'px';
+                    images[i].style.transform = 'rotateY(' + i * theta + 'rad)';
+                }
+                if (bfc) for (i = 0; i < n; i++) {
+                    images[i].style.backfaceVisibility = 'hidden';
+                }rotateCarousel(currImage);
+            }
+
+            function setupNavigation() {
+                nav.addEventListener('click', onClick, true);
+
+                function onClick(e) {
+                    e.stopPropagation();
+
+                    var t = e.target;
+                    if (t.tagName.toUpperCase() != 'BUTTON') return;
+
+                    if (t.classList.contains('next')) {
+                        currImage++;
+                    } else {
+                        currImage--;
+                    }
+
+                    rotateCarousel(currImage);
+                }
+            }
+
+            function rotateCarousel(imageIndex) {
+                figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
+            }
+        }
+    </script>
+
+    <div class="footer">
+
+
+    </div>
+</div>
 </body>
 </html>

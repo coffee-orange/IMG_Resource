@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>singer</title>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.4">
+    <meta name="MobileOptimized" content="240">
+    <!--<link href="css/blue.css" rel="stylesheet" type="text/css" />-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/lrc.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            outline:none;
+            /*border:1px solid red;*/
+            /*box-sizing:border-box;*/
+        }
+        ul, ol, dl {
+            list-style: none;
+        }
+        /*.music_box{margin:50px auto;width:422px;background: rgba(186, 38, 54, 0.32)  }*/
+        .content {overflow:hidden; margin:100px auto;
+            position: relative;}
+        #lrc_list{margin:10px auto;background: rgba(127, 127, 127, 0.71);}
+        #lrc_list li{
+            font:normal 13px/2.1 'microsoft yahei';
+            text-align:center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display:block;
+            width:250px;
+        }
+        #lrc_list li.hover {color:white;font-size:14px; transition:all .3s linear; }
+       .content{
+            position:relative;
+            background-image:url(images/huachenyu.jpg);
+            background-size:100%;
+       }
+       .content, .music_box,.jp-jplayer,.jp-audio,.jp-play,.jp-pause{
+           width:250px;
+           height:375px;
+           display:block;
+        }
+       #lrc_list{
+           position:absolute;
+           top:-13px;
+           left:0;
+           z-index: 5;
+       }
+        .music_box{
+            position:absolute;
+            top:0px;
+            left:0px;
+            z-index: 10;
+
+        }
+        .music_box:hover{
+            background: rgba(0, 0, 0, 0.22)
+        }
+        .lrc_wrapper{
+            width:250px;
+            height:178px;
+            overflow:hidden;
+            position:absolute;
+            top:75px;
+            left:0px;
+        }
+
+
+    </style>
+    <script>
+        //<![CDATA[
+        $(document).ready(function(){
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function (event) {
+                    $(this).jPlayer("setMedia", {
+                        mp3:"audio/华晨宇%20-%20易燃易爆炸.mp3" //mp3的播放地址
+                    });
+                },
+                timeupdate: function(event) {
+                    if(event.jPlayer.status.currentTime==0){
+                        time = "";
+                    }else {
+                        time = event.jPlayer.status.currentTime;
+                    }
+                },
+                play: function(event) {
+                    //点击开始方法调用lrc。start歌词方法 返回时间time
+                    $.lrc.start($('#lrc_content').val(), function() {
+                        return time;
+                    });
+                },
+                ended:function(event){
+                    $("#lrc_list").removeAttr("style").html("<li>歌曲播放完毕！</li>");
+                },
+                swfPath: "/js",  		//存放jplayer.swf的决定路径
+                solution:"html, flash", //支持的页面
+                supplied: "mp3",		//支持的音频的格式
+                wmode: "window"
+            });
+        });
+        //]]>
+    </script>
+</head>
+<body>
+<!--歌词调整区-->
+<textarea id="lrc_content" name="textfield" cols="70" rows="10" style="display:none;">
+    [00:03.00]
+    [00:03.50]-----------------
+    [00:04.50]易燃易爆炸 - 华晨宇
+    [00:06.00]作词:骈然 作曲:陈粒
+    [00:14.00]盼我疯魔
+    [00:18.00]还盼我孑孓不独活
+    [00:21.00]想我冷艳
+    [00:24.00]还想我轻佻又下贱
+    [00:26.23]要我阳光
+    [00:29.00]还要我风情不摇晃
+    [00:32.00]戏我哭笑无主
+    [00:34.74]还戏我心如枯木
+    [00:38.74]赐我梦境
+    [00:41.48]还赐我很快就清醒
+    [00:44.48]与我沉睡
+    [00:46.90]还与我蹉跎无慈悲
+    [00:49.90]爱我纯粹
+    [00:52.46]还爱我赤裸不糜颓
+    [00:55.46]看我自弹自唱
+    [00:57.46]还看我痛心断肠
+    [01:05.66]愿我如烟
+    [01:07.46]还愿我曼丽又懒倦
+    [01:09.40]看我痴狂
+    [01:11.46]还看我风趣又端庄
+    [01:13.26]要我美艳
+    [01:15.46]还要我杀人不眨眼
+    [01:18.69]祝我从此幸福
+    [01:20.46]还祝我枯萎不渡
+    [01:22.76]为我撩人
+    [01:24.46]还为我双眸失神
+    [01:26.60]图我情真
+    [01:28.46]还图我眼波销魂
+    [01:30.30]与我私奔
+    [01:32.46]还与我做不二臣
+    [01:35.11]夸我含苞待放
+    [01:36.46]还夸我欲盖弥彰
+    [01:56.46]啊 啊 啊 啊 啊
+    [02:00.46]啊 啊 啊 啊 啊
+    [02:05.46]啊 啊 啊啊啊
+    [02:07.46]啊 啊 啊 啊 啊
+    [02:12.57]赐我梦境
+    [02:14.46]还赐我很快就清醒
+    [02:16.66]与我沉睡
+    [02:18.46]还与我蹉跎无慈悲
+    [02:20.41]爱我纯粹
+    [02:22.46]还爱我赤裸不糜颓
+    [02:24.48]看我自弹自唱
+    [02:27.46]还看我痛心断肠
+    [02:29.58]为我撩人
+    [02:31.46]还为我双眸失神
+    [02:33.51]图我情真
+    [02:35.46]还图我眼波销魂
+    [02:37.15]与我私奔
+    [02:39.46]还与我做不二臣
+    [02:41.55]夸我含苞待放
+    [02:43.46]还夸我欲盖弥彰
+    [03:04.65]请我迷人
+    [03:08.46]还请我艳情透渗
+    [03:11.84]似我盛放
+    [03:14.46]还似我缺氧乖张
+    [03:18.57]由我美丽
+    [03:20.46]还由我贪恋着迷
+    [03:23.57]怨我百岁无忧
+    [03:27.46]还怨我徒有泪流
+</textarea>
+
+<!--content包含背景图-->
+<div class="content">
+    <!--按钮控制区-->
+    <div class="music_box">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio">
+            <ul class="jp-controls">
+                <li><a href="javascript:;" class="jp-play" tabindex="1"></a></li>
+                <li><a href="javascript:;" class="jp-pause" tabindex="1"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--歌词显示区域-->
+    <div class="lrc_wrapper">
+        <ul id="lrc_list">
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

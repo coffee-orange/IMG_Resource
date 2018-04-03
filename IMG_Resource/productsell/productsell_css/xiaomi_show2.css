@@ -32,7 +32,7 @@
 }
 /*导航列表*/
 .tab_ul {
-    width: 305px;
+    width:340px;
     height: 42px;
     display: block;
     box-sizing: border-box;
@@ -85,7 +85,7 @@
 }
 /*图片展示框列表，对应导航栏*/
 .pic_box_right ul {
-    width: 992px;
+    width: 1010px;
     height: 624px;
 }
 
@@ -109,6 +109,8 @@
     overflow: hidden;
     transition: all .2s linear;
     background:white;
+    width: 234px;
+    height: 300px;
 }
 /*图片外框*/
 .pic_box_right .pic_content {
@@ -224,6 +226,46 @@
     text-overflow: ellipsis;
     overflow:hidden;
 }
+.p1 {
+    width: 214px;
+    height: 23px;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    text-align: center;
+    margin-left: 9px;
+    font-family: Microsoft Yahei;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.p2 {
+    width: 214px;
+    height: 23px;
+    margin: 0 9px 8px;
+    /*font-size: 12px;*/
+    color: #b0b0b0;
+    text-align: center;
+    font-family: sans-serif;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.p3 {
+    width: 214px;
+    height: 22px;
+    margin: 0 10px 14px;
+    font-size: 13.5px;
+    font-weight: normal;
+    color: #ff6700;
+    text-align: center;
+    font-family: sans-serif;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
 /*浏览更多*/
 .font_content .more{
     font-size:20px;
@@ -241,4 +283,5 @@
     transform: translate3d(0, -2px, 0);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+
 
