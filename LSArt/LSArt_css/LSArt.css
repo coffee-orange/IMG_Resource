@@ -14,7 +14,7 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 .left{float:left;}
 .right{float:right;}
 
-a {color:#2b2b2b; text-decoration:none;}
+a {color:#2b2b2b; text-decoration:none; font-size: 14px;}
 a:visited {text-decoration:none;}
 a:hover {color:#ba2636;text-decoration:underline;}
 a:active {color:#ba2636;}
@@ -34,8 +34,16 @@ a:active {color:#ba2636;}
     width: 100%;
     height: 80px;
     background-color: #b0b0b0;
+    border-radius: 80px 0 80px 0;
 }
-
+.header .header_word{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+}
 /* 主内容区样式 */
 #container{
     width: 88%;
@@ -49,58 +57,101 @@ a:active {color:#ba2636;}
     padding: 30px 18px 0px;
     float: left;
 }
+/* 图片最外盒子 */
 #container .box .box_img{
     width: 360px;
     height: auto;
-    padding: 5px;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 16px;
     border: 2px solid #ccc;
     box-shadow: 0 0 5px #ccc;
-    border-radius: 8px;
+    border-radius: 5px;
     position: relative;
-    transition: .8s;
+    -webkit-transition: .6s;
+    transition: .6s;
     overflow: hidden;
 }
 #container .box .box_img img{
-    width: 360px;
+    width: 324px;
     height: auto;
-}
-#container .box .box_img:hover{
-    transform: translate3d(-2px,-6px,0px);
-    box-shadow: 0px 10px 12px rgba(0,0,0,.3);
+    position: relative;
+    display: block;
+    opacity: 0.88;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transform: scale3d(1.06,1.06,1);
+    transform: scale3d(1.06,1.06,1);
 }
 
-/* 图片隐藏内容设置 */
+#container .box .box_img:hover img{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+/* 鼠标经过图片特效 */
+#container .box .box_img .pass_box::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+#container .box .box_img:hover .pass{
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+#container .box .box_img:hover .pass_box::before {
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+/* 图片隐藏内容设置，鼠标经过上浮效果 */
 #container .box .box_img .bottom_hidden{
-    width: 360px;
+    width: 324px;
     height: 40px;
     background-color: rgba(165, 165, 165, 0.5);
     position: absolute;
-    bottom: -90px;
-    transition: .7s;
+    bottom: -40px;
+    -webkit-transition: .35s;
+    transition: .35s;
 }
-#container .box .box_img .bottom_hidden .LSArtWorld{
+#container .box .box_img .bottom_hidden .LSArtWord{
+    width: 324px;
+    height: 40px;
     line-height: 36px;
     text-align: center;
     color: white;
+    font-size: 14px;
 }
 #container .box .box_img:hover .bottom_hidden{
-    bottom: 5px;
+    bottom: 16px;
+}
+#container .box .box_img .bottom_hidden .LSArtWord .word{
+    display: inline-block;
 }
 /* 至2018-3-29 22:00提交 */
 
 /* 图片下载图标设置 */
-#container .box .bottom_hidden .LSArtWorld a{
+#container .box .box_img .bottom_hidden .LSArtWord .aicon{
     color: rgb(185, 253, 255);
-    text-decoration:none;
-    transition: 0.6s;
+    text-decoration: none;
 }
-#container .box .bottom_hidden .LSArtWorld a:hover{
+#container .box .box_img .bottom_hidden .LSArtWord .aicon:hover{
     color: #ff0000;
+    text-decoration: underline;
 }
-#container .box .bottom_hidden .LSArtWorld a{
-
+#container .box .box_img .bottom_hidden .LSArtWord .aicon:hover i{
+    color: rgb(185, 253, 255);
 }
-
 
 /* 侧栏 */
 .sidebar{
@@ -120,7 +171,8 @@ a:active {color:#ba2636;}
     background-color: #b0b0b0;
     border-radius: 6px 0 0 6px;
     border-bottom: 1px solid white;
-    transition: 0.8s;
+    -webkit-transition: .8s;
+    transition: .8s;
     display: block;
 }
 .sidebar .sidebarBox{
@@ -130,6 +182,7 @@ a:active {color:#ba2636;}
     line-height: 60px;
     background-color: #b0b0b0;
     border-radius: 6px 0 0 6px;
+    -webkit-transition: .8s;
     transition: 0.8s;
 }
 .sidebar .sidebarBox .iconfont{

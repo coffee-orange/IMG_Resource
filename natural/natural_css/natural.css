@@ -1,5 +1,5 @@
 /* css基本模型样式 */
-*{ margin: 0px; padding: 0px;  }
+*{ margin: 0px; padding: 0px; }
 body {font:12px "\5B8B\4F53",san-serif;background:#fff;}
 div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
 table,td,tr,th{font-size:12px;}
@@ -19,6 +19,9 @@ a:visited {text-decoration:none;}
 a:hover {color:#ba2636;text-decoration:underline;}
 a:active {color:#ba2636;}
 
+body{
+    background-color: beige;
+}
 /* 右侧栏条(修饰作用) */
 .vertical-Bar{
     width: 5px;
@@ -34,6 +37,15 @@ a:active {color:#ba2636;}
     width: 100%;
     height: 80px;
     background-color: #b0b0b0;
+    border-radius: 80px 0 80px 0;
+}
+.header .header_word{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: beige;
+    text-align: center;
+    font-size: 30px;
 }
 
 /* 主内容区样式 */
@@ -45,56 +57,68 @@ a:active {color:#ba2636;}
     /*border: 1px dashed blue;*//*测试*/
 }
 #container .box{
-    padding: 15px;
+    padding: 30px 15px 0px;
     float: left;
 }
 #container .box .box_img{
-    width: 280px;
+    width: 260px;
     height: auto;
+    box-sizing: border-box;
     padding: 5px;
     border: 2px solid #ccc;
     box-shadow: 0 0 5px #ccc;
     border-radius: 8px;
     position: relative;
+    -webkit-transition: .8s;
     transition: .8s;
     overflow: hidden;
 }
 #container .box .box_img img{
-    width: 280px;
+    width: 246px;
     height: auto;
 }
 #container .box .box_img:hover{
+    -webkit-transform: translate3d(-2px,-6px,0px);
     transform: translate3d(-2px,-6px,0px);
     box-shadow: 0px 10px 12px rgba(0,0,0,.3);
-}
-#container .box .box_img .bottom_hidden{
-    width: 280px;
-    height: 40px;
-    background-color: rgba(165, 165, 165, 0.5);
-    position: absolute;
-    bottom: -90px;
-    transition: .7s;
-}
-#container .box .box_img .bottom_hidden .naturalWorld{
-    line-height: 36px;
-    text-align: center;
-    color: white;
-}
-#container .box .box_img:hover .bottom_hidden{
-    bottom: 5px;
+    opacity: .85;
 }
 
-/* 图片下载图标设置 */
-#container .box .bottom_hidden .LSArtWorld a{
-    color: rgb(185, 253, 255);
+/* 图片下载图标效果设置 */
+#container .box .box_img .hidden_box .aicon i{
+    color: rgb(255, 0, 0);
     text-decoration:none;
-    transition: 0.6s;
+    position: absolute;
+    left: 208px;
+    bottom: 4px;
+    opacity: 0;
+    -webkit-transition: opacity 0.55s, -webkit-transform 0.55s;
+    transition: opacity 0.55s, transform 0.55s;
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
 }
-#container .box .bottom_hidden .LSArtWorld a:hover{
-    color: #ff0000;
+#container .box .box_img:hover .hidden_box .aicon i{
+    font-weight: 800;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
-#container .box .bottom_hidden .LSArtWorld a{
 
+/* 图片下方文字设置 */
+#container .box .box_img .naturalWord{
+    width: 246px;
+    height: 32px;
+    color: #8d8d8c;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 8px 0;
+    text-indent: 18px;
+    line-height: 22px;
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+#container .box .box_img:hover .naturalWord{
+    color: black;
 }
 
 /* 侧栏 */
@@ -115,7 +139,8 @@ a:active {color:#ba2636;}
     background-color: #b0b0b0;
     border-radius: 6px 0 0 6px;
     border-bottom: 1px solid white;
-    transition: 0.8s;
+    -webkit-transition: .8s;
+    transition: .8s;
     display: block;
 }
 .sidebar .sidebarBox{
@@ -125,7 +150,8 @@ a:active {color:#ba2636;}
     line-height: 60px;
     background-color: #b0b0b0;
     border-radius: 6px 0 0 6px;
-    transition: 0.8s;
+    -webkit-transition: .8s;
+    transition: .8s;
 }
 .sidebar .sidebarBox .iconfont{
     font-size: 36px;

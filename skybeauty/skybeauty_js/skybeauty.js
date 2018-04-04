@@ -2,10 +2,9 @@
 window.onload = function(){
     /*定义字符串，进行网络上的图片数据名传输*/
     var imgData={"data":[
-        {"src":"17.jpg"},{"src":"18.jpg"},{"src":"19.jpg"},{"src":"21.jpg"},{"src":"22.jpg"},
-        {"src":"23.jpg"},{"src":"24.jpg"},{"src":"25.jpg"},{"src":"26.jpg"},{"src":"27.jpg"},
-        {"src":"28.jpg"},{"src":"29.jpg"},{"src":"30.jpg"},{"src":"31.jpg"},{"src":"32.jpg"},
-        {"src":"33.jpg"},{"src":"34.jpg"},{"src":"35.jpg"}
+        {"src":"21"},{"src":"22"},{"src":"23"},{"src":"24"},{"src":"25"},
+        {"src":"26"},{"src":"27"},{"src":"28"},{"src":"29"},{"src":"30"},
+        {"src":"31"},{"src":"32"},{"src":"33"},{"src":"34"},{"src":"35"}
     ]};
 
     imgLocation("container", "box"); /*  */
@@ -24,13 +23,31 @@ window.onload = function(){
                 ccontent.appendChild(boximg);
 
                 var img = document.createElement("img");
-                img.src = "skybeauty_images/skybeauty"+imgData.data[i].src;
+                img.src = "skybeauty_images/skybeauty"+imgData.data[i].src+".jpg";
                 boximg.appendChild(img);
 
-                var bottomHidden = document.createElement("div");
-                bottomHidden.className="bottom_hidden";
-                boximg.appendChild(bottomHidden);
+                var bottomShow = document.createElement("div");
+                bottomShow.className="bottom_show";
+                boximg.appendChild(bottomShow);
 
+                var skybeautyWord = document.createElement("div");
+                skybeautyWord.className="skybeautyWord";
+                bottomShow.appendChild(skybeautyWord);
+
+                var word = document.createElement("span");
+                word.className="word";
+                skybeautyWord.appendChild(word);
+                word.innerHTML="Beautiful Sky Material "+imgData.data[i].src+"&nbsp;";
+
+                var a = document.createElement("a");
+                a.href="#";
+                a.className="aicon";
+                a.download="skybeauty"+imgData.data[i].src +".jpg";
+                skybeautyWord.appendChild(a);
+
+                var icon = document.createElement("i");
+                icon.className="iconfont icon-plus-download";
+                a.appendChild(icon);
             }
         }
         imgLocation("container", "box");

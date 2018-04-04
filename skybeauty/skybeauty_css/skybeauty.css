@@ -14,7 +14,7 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 .left{float:left;}
 .right{float:right;}
 
-a {color:#2b2b2b; text-decoration:none;}
+a {color:#2b2b2b; text-decoration:none; font-size: 14px;}
 a:visited {text-decoration:none;}
 a:hover {color:#ba2636;text-decoration:underline;}
 a:active {color:#ba2636;}
@@ -34,6 +34,15 @@ a:active {color:#ba2636;}
     width: 100%;
     height: 80px;
     background-color: #b0b0b0;
+    border-radius: 80px 0 80px 0;
+}
+.header .header_word{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
 }
 
 /* 主内容区样式 */
@@ -45,12 +54,13 @@ a:active {color:#ba2636;}
     /*border: 1px dashed blue;*//*测试*/
 }
 #container .box{
-    padding: 15px;
+    padding: 30px 15px 0px;
     float: left;
 }
 #container .box .box_img{
-    width: 200px;
+    width: 260px;
     height: auto;
+    box-sizing: border-box;
     padding: 5px;
     border: 2px solid #ccc;
     box-shadow: 0 0 5px #ccc;
@@ -60,41 +70,40 @@ a:active {color:#ba2636;}
     overflow: hidden;
 }
 #container .box .box_img img{
-    width: 200px;
+    width: 246px;
     height: auto;
+    position: relative;
 }
 #container .box .box_img:hover{
-    transform: translate3d(-2px,-6px,0px);
+    transform: translate3d(2px,6px,0px);
     box-shadow: 0px 10px 12px rgba(0,0,0,.3);
 }
-#container .box .box_img .bottom_hidden{
-    width: 200px;
+#container .box .box_img .bottom_show{
+    width: 246px;
     height: 40px;
     background-color: rgba(165, 165, 165, 0.5);
     position: absolute;
-    bottom: -90px;
-    transition: .7s;
+    bottom: 5px;
 }
-#container .box .box_img .bottom_hidden .skybeautyWorld{
-    line-height: 36px;
-    text-align: center;
+#container .box .box_img .bottom_show .skybeautyWord{
+    width: 246px;
+    height: 40px;
+    line-height: 34px;
+    text-indent: 24px;
     color: white;
 }
-#container .box .box_img:hover .bottom_hidden{
-    bottom: 5px;
+#container .box .box_img .bottom_show .skybeautyWord .span{
+    display: inline-block;
 }
 
 /* 图片下载图标设置 */
-#container .box .bottom_hidden .LSArtWorld a{
+#container .box .box_img .bottom_show .skybeautyWord .aicon{
     color: rgb(185, 253, 255);
     text-decoration:none;
-    transition: 0.6s;
+    transition: .35s;
 }
-#container .box .bottom_hidden .LSArtWorld a:hover{
+#container .box .box_img .bottom_show .skybeautyWord .aicon:hover{
     color: #ff0000;
-}
-#container .box .bottom_hidden .LSArtWorld a{
-
 }
 
 /* 侧栏 */
