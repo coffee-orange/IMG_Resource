@@ -8,13 +8,17 @@
 }
        a{
            cursor: pointer;
+           text-decoration: none;
+           color: white;
        }
 
         /*页面总框架的定义*/
-
+       ul, ol, dl {
+           list-style: none;
+       }
 .container{
-    height: 1900px;
-    width: 1250px;
+    height: 4400px;
+    width:100%;
     position: relative;
     margin: 0 auto;
 }
@@ -115,8 +119,8 @@
 
     /*中间内容区定义*/
 .content{
-    width: 100%;
-    height: 1800px;
+    width:100%;
+    height:4200px;
     margin: 1px auto;
     border: 1px solid transparent;
     position: relative;
@@ -124,12 +128,19 @@
 }
     /*轮播图区域*/
 .content .carouselfigure{
-    height: 500px;
-    width: 95%;
+    height: 600px;
+    width: 1180px;
     border: 1px solid transparent;
-    margin:0 auto;
+    margin: 33px auto;
     overflow: hidden;
+
 }
+
+       .content .images .image a{
+           display:block;
+           height: 600px;
+           width: 1180px;
+       }
                     /*复制test.css模板*/
 [data-am-gallery] {
    position: relative;
@@ -160,6 +171,7 @@
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(6) ~ .navigation .dot:nth-child(6) {
    background-color: coral;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(6) ~ .navigation .dot:nth-child(6):hover {
    opacity: 1;
@@ -169,6 +181,7 @@
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(5) ~ .navigation .dot:nth-child(5) {
    background-color: coral;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(5) ~ .navigation .dot:nth-child(5):hover {
    opacity: 1;
@@ -178,6 +191,7 @@
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(4) ~ .navigation .dot:nth-child(4) {
    background-color: coral;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(4) ~ .navigation .dot:nth-child(4):hover {
    opacity: 1;
@@ -187,6 +201,7 @@
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(3) ~ .navigation .dot:nth-child(3) {
    background-color: coral;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(3) ~ .navigation .dot:nth-child(3):hover {
    opacity: 1;
@@ -196,6 +211,7 @@
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(2) ~ .navigation .dot:nth-child(2) {
    background-color: coral;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(2) ~ .navigation .dot:nth-child(2):hover {
    opacity: 1;
@@ -205,6 +221,7 @@
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(1) ~ .navigation .dot:nth-child(1) {
    background-color: coral;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
 }
 [data-am-gallery] input[type="radio"]:checked:nth-child(1) ~ .navigation .dot:nth-child(1):hover {
    opacity: 1;
@@ -501,55 +518,133 @@
             height: 328px;
             width: 1066px;
             margin: 10px auto;
-            border:1px solid red;
-            box-sizing: border-box;
+            /*border:1px solid red;*/
+            /*box-sizing: border-box;*/
+            position:relative;
+            background: rgba(12, 12, 12, 0.02);
         }
-        .show_content *{
-            border:1px solid red;
-            box-sizing: border-box;
-        }
+        /*.show_content *{*/
+            /*border:1px solid red;*/
+            /*box-sizing: border-box;*/
+        /*}*/
         .show_content_hover{
             height: 325px;
             width: 486px;
             float: left;
-            border:1px solid rgba(177, 177, 177, 0.64);
+            border:1px solid rgba(12, 12, 12, 0.02);
             box-sizing: border-box;
         }
         .show_content_layout{
             height: 325px;
             width: 578px;
             float: left;
-            border:1px solid rgba(177, 177, 177, 0.64);
+            border:1px solid rgba(12, 12, 12, 0.02);
             box-sizing: border-box;
         }
         .show_content_layout img{
             height: 323px;
             width: 576px;
         }
-       /*第一个building展示模板css*/
-.content .building{
-}
-
-.building .buildingleft{
-
-}
-.building .buildingright{
-
-}
-.buildingright img{
-
-}
-
-       /*第二个展示模板css*/
+       /*min1-building展示模板csscss*/
 
 
-       /*第三css个展示*/
+       /*hui1-LSArt展示模板csscss*/
+       /* hui三个模块图片最外盒子,三模块通用 */
+       .show_content .box_img{
+           width: 410px;
+           height: auto;
+           padding: 5px;
+           color: white;
+           font-size: 14px;
+           box-sizing: border-box;
+           border: 2px solid #ccc;
+           box-shadow: 0 0 5px #ccc;
+           border-radius: 8px;
+           position: relative;
+           -webkit-transition: .6s;
+           transition: .6s;
+           overflow: hidden;
+       }
+       /**** 光影艺术图片部分css ****/
+       .show_content .LSArt{
+           padding: 24px;
+           left:40px
+       }
+
+       .show_content .LSArt .LSArtimg{
+           width: 360px;
+           height: auto;
+           position: relative;
+           display: block;
+           opacity: 0.88;
+           -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+           transition: opacity 0.5s, transform 0.5s;
+           -webkit-transform: scale3d(1.06,1.06,1);
+           transform: scale3d(1.06,1.06,1);
+       }
+       .show_content .LSArt:hover .LSArtimg{
+           opacity: 1;
+           -webkit-transform: scale3d(1,1,1);
+           transform: scale3d(1,1,1);
+       }
+       .show_content .LSArt .pass_box::before {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: rgba(255,255,255,0.6);
+           content: '';
+           -webkit-transition: -webkit-transform 0.6s;
+           transition: transform 0.6s;
+           -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+           transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+       }
+       .show_content .LSArt:hover .pass{
+           opacity: 1;
+           -webkit-transition-delay: 0.1s;
+           transition-delay: 0.1s;
+       }
+       .show_content .LSArt:hover .pass_box::before {
+           -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+           transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+       }
+       .show_content .LSArt .bottom_hidden{/* 图片隐藏内容设置，鼠标经过上浮效果 */
+           width: 360px;
+           height: 40px;
+           background-color: rgba(165, 165, 165, 0.5);
+           position: absolute;
+           bottom: -40px;
+           -webkit-transition: .35s;
+           transition: .35s;
+       }
+       .show_content .LSArt .bottom_hidden .LSArtWord{
+           width: 360px;
+           height: 40px;
+           line-height: 36px;
+           text-align: center;
+           color: white;
+           font-size: 14px;
+       }
+       .show_content .LSArt:hover .bottom_hidden{
+           bottom: 24px;
+       }
+       .show_content .LSArt .bottom_hidden .LSArtWord .aicon{/* 图片下载图标设置 */
+           color: rgb(185, 253, 255);
+           text-decoration: none;
+           -webkit-transition: .35s;
+           transition: .35s;
+       }
+       .show_content .LSArt .bottom_hidden .LSArtWord .aicon:hover{
+           color: #ff0000;
+       }
+
+       /*dong1-Car_world展示模板css*/
        .middle_three{
            position: absolute;
            width: 486px;
            height: 323px;
            /*border: 1px solid darkgreen;*/
-
            float: left;
 
        }
@@ -564,7 +659,7 @@
        .middle_three .third img{
            /*position: relative;*/
            width: 486px;
-           height: 323px;
+           height: 324px;
 
        }
        .middle_three .third p{
@@ -573,6 +668,7 @@
            height:323px;
            margin:0 ;
            float:left;
+           transition: all .5s ease-in-out;
        }
        .middle_three .third p:hover{
            text-decoration:none;
@@ -588,10 +684,11 @@
            line-height:36px;
            padding:150px 0;
            font-weight:bold;
+           transition: all .5s ease-in-out;
        }
        .middle_three .third p:hover span{
            width:486px;
-           height: 323px;
+           height: 23px;
            background: rgba(73, 73, 73, 0.56);
            display:block;
            position:absolute;
@@ -603,12 +700,24 @@
            opacity:0.8;
            align:center;
        }
-       /*第四个展示模板*/
+       #car_pic{
+           height: 323px;
+           width: 380px;
+           margin-left:100px;
+       }
+       /*cheng1-展示模板css*/
+       #movies_pic{
+           height:350px;
+           width: 280px;
+           margin-left:148px;
+       }
+       .movies_height{
+           height:350px;
+       }
 
+       /*min2-productsell展示模板css*/
 
-       /*第五个展示模板*/
-
-       .xiaomi_show .wrapper{
+        .xiaomi_show_wrapper{
            width: 234px;
            height: 300px;
            margin:10px auto;
@@ -616,11 +725,75 @@
        .xiaomi_show .show_content_hover{
            background: #f5f5f5;
        }
-       /*第六个展示模板*/
+       #xiaomi_pic{
+           width:395px;
+           margin-left:104px;
+       }
+       .tab_ul li {
+           margin-left: 0;
+           cursor: pointer;
+           font-size: 16px;
+           display: inline-block;
+           color: #424242;
+       }
+       /*hui2-natural展示模板css*/
+       /**** 自然风光图片部分css ****/
+       .show_content .natural{
+           top:18px;
+           left: 35px;
+       }
+       .show_content .show_content_hover .natural_wrapper{
+           height: 325px;
+           width: 486px;
+           background: #f5f5dc;
+       }
+       .show_content .natural .naturalimg{
+           width: 395px;
+           height: auto;
+       }
+       .show_content .natural:hover{
+           -webkit-transform: translate3d(-2px,-6px,0px);
+           transform: translate3d(-2px,-6px,0px);
+           box-shadow: 0px 10px 12px rgba(0,0,0,.3);
+           opacity: .85;
+       }
+       .show_content .natural .hidden_box .aicon i{/* 图片下载图标效果设置 */
+           color: rgb(255, 0, 0);
+           text-decoration:none;
+           position: absolute;
+           left: 320px;
+           bottom: 14px;
+           opacity: 0;
+           -webkit-transition: opacity 0.55s, -webkit-transform 0.55s;
+           transition: opacity 0.55s, transform 0.55s;
+           -webkit-transform: translate3d(0,50px,0);
+           transform: translate3d(0,50px,0);
+       }
+       .show_content .natural:hover .hidden_box .aicon i{
+           font-weight: 800;
+           opacity: 1;
+           -webkit-transform: translate3d(0,0,0);
+           transform: translate3d(0,14px,0);
+       }
+       .show_content .natural .naturalWord{/* 图片下方文字设置 */
+           width: 395px;
+           height: 24px;
+           color: #8d8d8c;
+           font-size: 14px;
+           box-sizing: border-box;
+           padding: 6px 0;
+           text-indent: 24px;
+           line-height: 20px;
+           -webkit-transition: .8s;
+           transition: .8s;
+       }
+       .show_content .natural:hover .naturalWord{
+           color: black;
+       }
 
 
-       /*第七个展示模板*/
-       .first_one{  position: relative;  height: 325px;
+       /*dong2-sport展示模板css*/
+       .first_one{  position: relative;  height: 322px;
            width: 486px;  border: 1px solid black;
            float: left;  transition: .9s;
            white-space: nowrap;  overflow: hidden;  }
@@ -632,7 +805,7 @@
            text-align: center;
            width: 486px;
            height: 70px;
-           background-color: #999998;
+           background-color: #8d8d8c;
            position: absolute;
            bottom:-70px;
            transition: .9s;
@@ -642,11 +815,10 @@
        ul li{  list-style: none;  }
        .write{
            position: relative;
-
            color: #404040;
            text-align:center;
            font-size: 20px;
-       }       .bask_logo{  background: url("../sport/sport_images/basketball_logo.jpg");
+       }       .bask_logo{  background: url("../../sport/sport_images/basketball_logo.jpg");
                    width: 20px;  height: 20px;  }
        .commit{  color: #404040;  text-align:center;
            font-size: 22px;   }
@@ -654,16 +826,157 @@
        .show_content_layout img{
 
        }
+       #sport_pic{
+           height: 323px;
+           width: 380px;
+           margin-left:100px;
+       }
 
-       /*第八个展示模板*/
+       /*cheng2-展示模板css*/
+        .show_content_comics{
+            height: 300px;
+            position: relative;
+            float: left;
+        }
+       .comics_framing{
+           width: 486px;
+           height: 285px;
+           transition: .5s;
+           float: left;
+           border-radius: 10px;
+           background-size: cover;
+       }
+       .comics_framing  .comics_column{
+           width: 486px;
+           height: 285px;
+           position: relative;
+           margin-top: 20px;
+           border-radius: 10px;
+           background-size: cover;
+           overflow: hidden;
+       }
+       .comics_framing  .comics_column .comics_photo{
+           width: 486px;
+           height: 285px;
+           float: left;
+           position: relative;
+           background: url("../mainpage_images/one_punch_man%20.jpg")no-repeat;
+           background-size: cover;
+           border-radius: 10px;
+           transition: .5s;
+       }
+       .comics_photo:hover {
+           transform: scale(1.2);
+           border-radius: 10px;
+       }
+       .comics_layout{
+           width: 320px;
+           height: 300px;
+           position: absolute;
+           float: left;
+       }
+        #comics_pic{
+            width: 280px;
+            margin-left:148px;
+        }
+       /*min3-singer展示模板css*/
+       .singer_height{
+           height:378px;
+           z-index: 10;
 
+       }
+       .singer_layout{
+           /*background-image:url(singer/images/singer.jpg) ;*/
+           /*background-size: 775px 375px;*/
+           /*background-repeat: no-repeat;*/
+           /*background-position: -189px 0;*/
+           overflow: hidden;
+           z-index: 10;
+       }
 
+       #singer_img{
+           position: absolute;
+           width:775px;
+           height: 377px;
+           right:0;
+           z-index:-1;
+       }
+
+       /*hui3-skybeauty展示模板css*/
+       /**** 天空美景图片部分css ****/
+
+       .show_content .skybeauty{
+           top: 30px;
+           left: 35px;
+       }
+       .show_content .skybeautyimg{
+           width: 395px;
+           height: auto;
+       }
+       .show_content .skybeauty:hover{
+           transform: translate3d(2px,6px,0px);
+           box-shadow: 0px 10px 12px rgba(0,0,0,.3);
+       }
+       .show_content .skybeauty .bottom_show{
+           width: 395px;
+           height: 40px;
+           background-color: rgba(165, 165, 165, 0.5);
+           position: absolute;
+           bottom: 8px;
+       }
+       .show_content .skybeauty .bottom_show .skybeautyWord{
+           width: 340px;
+           height: 40px;
+           line-height: 42px;
+           text-align: center;
+           color: white;
+           position: relative;
+       }
+       .show_content .skybeauty .bottom_show .skybeautyWord .span{
+           display: inline-block;
+       }
+       .show_content .skybeauty .bottom_show .skybeautyWord .aicon{/* 图片下载图标设置 */
+           color: rgb(185, 253, 255);
+           text-decoration:none;
+           position: absolute;
+           left: 260px;
+           bottom: -3px;
+           -webkit-transition: .35s;
+           transition: .35s;
+       }
+       .show_content .skybeauty .bottom_show .skybeautyWord .aicon:hover{
+           color: #ff0000;
+       }
+       .click{
+           width:45px;
+           height:50px;
+           border:1px solid #de9c1f;
+           position:absolute;
+           top:5px;
+           left:5px;
+           text-align: center;
+           line-height: 25px;
+           font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+           color: rgba(255, 255, 255, 0.8);
+           transform: translate3d(0, 0, 0);
+           display:none;
+           transition:all .5s linear;
+
+       }
+       .music_box:hover .click{
+
+           display:block;
+       }
        /*尾部区域的定义*/
 .foot{
+    bottom:0;
     height: 200px;
-    width: 80%;
+    width: 100%;
     border: 1px solid transparent;
     margin: 0px auto;
+    position:absolute;
+
+
 }
 .foot .foot_top{
     text-align: center;

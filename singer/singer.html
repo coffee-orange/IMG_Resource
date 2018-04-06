@@ -2,126 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-    <!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.jplayer.js"></script>-->
-    <!--<script type="text/javascript" src="js/lrc.js"></script>-->
-    <style type="text/css" >
-        *{
-            margin:0;
-            padding:0;
-        }
-        body{
-            background: rgb(30, 30, 30);
-        }
-        @font-face {
-            font-family:family_min;
-            font-size:20px;
-            src:url(font/李旭科书法1.4.ttf);
+    <title>singer</title>
 
-        }
-        .pic_content{
-            position: relative;
-            float:left;
-            margin-right:15px;
-        }
-        .pic_content{
-            width:360px;
-            height:700px;
-            overflow:hidden;
-
-        }
-        .pic_content img{
-           width:500px;
-            height:755px;
-            z-index: 5;;
-
-        }
-        .word_content{
-            display:inline-block;
-            width:360px;
-            height:700px;
-            position: absolute;
-            top:0;
-            left:0;
-            z-index:10;
-            border:1px solid rgba(222, 156, 31, 0.4);
-            box-sizing: border-box;
-            background: rgba(0, 0, 0, 0.4);
-        }
-        .word_content:hover{
-            background: rgba(0, 0, 0, 0);
-        }
-        .pic1{
-          position:absolute;
-            right:-140px;
-            top:-33px;
-        }
-        .pic2{
-          position:absolute;
-            top:-55px;
-            right:-141px;
-        }
-        .pic3{
-          position:absolute;
-            top: -38px;
-            right: -140px;
-        }
-        .singer{
-            width:360px;
-            height:52px;
-            position: absolute;
-            top:312px;
-        }
-        .singer span{
-            line-height: 1.5em;
-            font-weight:bold;
-            letter-spacing: 10px;
-            font-size:40px;
-            display:block;
-            margin:auto;
-            text-align: center;
-            font-family:family_min;
-            color: #de9c1f;
-        }
-        .singer span:nth-child(2){
-            font-size:16px;
-            font-weight:normal;
-            font-family: 楷体;
-        }
-
-        .pic_content:not(:nth-child(1)){
-            cursor: pointer;
-        }
-
-        .word_content .click{
-            width:25px;
-            height:50px;
-            border:1px solid #de9c1f;
-            position:absolute;
-            top:0px;
-            right:0px;
-            text-align: center;
-            line-height: 25px;
-            font-family: family_min;
-            color: rgba(255, 255, 255, 0.8);
-            transform: translate3d(0, 0, 0);
-            display:none;
-            transition:all .5s linear;
-        }
-        .word_content:hover .click{
-            transform: translate3d(-25px, 25px, 0);
-            display:block;
-        }
-
-        .Menubox_on{
-            background: rgba(0, 0, 0, 0);
-        }
-
-
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/singer.css"/>
+    <script type="text/javascript" src="js/singer.js"></script>
 </head>
 <body>
 <div class="pic_content ">
@@ -159,47 +43,7 @@
     </div>
     <img src="images/huachenyu.jpg" class="pic3" alt=""/>
 </div>
-<script>
-    var myAudio1 = document.getElementById('audio1');
-    var myAudio2 = document.getElementById('audio2');
-    var myAudio3 = document.getElementById('audio3');
 
-    function playPause1(){
-        if(myAudio1.paused){
-            myAudio1.play();
-            myAudio2.pause();
-            myAudio3.pause();
-        }else{
-            myAudio1.pause();
-        }
-    }
-    function playPause2(){
-        if(myAudio2.paused){
-            myAudio2.play();
-            myAudio1.pause();
-            myAudio3.pause();
-        }else{
-            myAudio2.pause();
-        }
-    }
-    function playPause3(){
-        if(myAudio3.paused){
-            myAudio3.play();
-            myAudio1.pause();
-            myAudio2.pause();
-        }else{
-            myAudio3.pause();
-        }
-    }
-    function setTab(name, cursel, n) {
-        for (i = 1; i <= n; i++) {
-            var menu = document.getElementById(name + i);
-//            var con = document.getElementById("ul_" + name + "_" + i);
-            menu.className = i == cursel ? "word_content Menubox_on" : "word_content";
-//            con.style.display = i == cursel ? "block" : "none";
-        }
-    }
-</script>
 
 </body>
 </html>

@@ -1,0 +1,44 @@
+.column_up{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+}
+.framing_one{
+    width: 486px;
+    height: 306px;
+    transition: 2s;
+    overflow: hidden;
+    float: left;
+    border-radius: 10px;
+}
+.photo_one{
+    width: 486px;
+    height: 285px;
+    float: left;
+    position: relative;
+    /*margin-left: 20px;*/
+    margin-top: 20px;
+    background: url("../mainpage_images/one_punch_man%20.jpg")no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.framing_one:hover {
+    transform: translate3d(0px,-5px,0px) scale(1.06);
+}
+.framing_one .bottom_one{
+    width: 486px;
+    height: 60px;
+    background-color: #9f9f9f;
+    position: absolute;
+    bottom: -60px;
+    opacity: 0.8;
+    text-indent: 24px;
+    transition: 2s;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+.framing_one:hover .bottom_one{
+    bottom: 0px;
+}

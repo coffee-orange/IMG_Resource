@@ -43,7 +43,7 @@
 .framing_one{
     width: 320px;
     height: 200px;
-    transition: 2s;
+    transition: .5s;
     overflow: hidden;
     float: left;
     border-radius: 10px;
@@ -65,16 +65,17 @@
 }
 .framing_one .bottom_one{
     width: 300px;
-    height: 60px;
+    height: 30px;
     background-color: #9f9f9f;
     position: absolute;
-    bottom: -70px;
+    bottom: -10px;
     opacity: 0.8;
     text-indent: 24px;
-    transition: 2s;
+    transition: .5s;
     font-size: 12px;
     letter-spacing: 2px;
-
+    text-align: center;
+    line-height: 25px;
 }
 .framing_one:hover .bottom_one{
     bottom: 15px;
@@ -82,7 +83,7 @@
 .framing_two{
     width: 320px;
     height: 200px;
-    transition: 2s;
+    transition: .5s;
     overflow: hidden;
     float: left;
     border-radius: 10px;
@@ -104,15 +105,17 @@
 }
 .framing_two .bottom_two{
     width: 300px;
-    height: 60px;
+    height: 30px;
     background-color: #9f9f9f;
     position: absolute;
-    bottom: -70px;
+    bottom: -10px;
     opacity: 0.8;
     text-indent: 24px;
-    transition: 2s;
+    transition: .5s;
     font-size: 12px;
     letter-spacing: 2px;
+    text-align: center;
+    line-height: 25px;
 }
 .framing_two:hover .bottom_two{
     bottom: 15px;
@@ -120,7 +123,7 @@
 .framing_three{
     width: 320px;
     height: 200px;
-    transition: 2s;
+    transition: .5s;
     overflow: hidden;
     float: left;
     border-radius: 10px;
@@ -142,16 +145,17 @@
 }
 .framing_three .bottom_three{
     width: 310px;
-    height: 60px;
+    height: 30px;
     background-color: #9f9f9f;
     position: absolute;
-    bottom: -70px;
+    bottom: -10px;
     opacity: 0.8;
     text-indent: 24px;
-    transition: 2s;
+    transition: .5s;
     font-size: 12px;
     letter-spacing: 2px;
-
+    text-align: center;
+    line-height: 25px;
 }
 .framing_three:hover .bottom_three {
     bottom: 15px;
@@ -209,7 +213,7 @@
     position: relative;
     margin-left: 50px;
     font-size: 35px;
-    top: 20px;
+    top: -18px;
 }
 .text_four_name_2{
     width: 300px;
@@ -219,6 +223,7 @@
     margin-left: 50px;
     font-size: 30px;
     margin-top: 40px;
+    top:-39px;
 }
 .text_four_about{
     width: 300px;

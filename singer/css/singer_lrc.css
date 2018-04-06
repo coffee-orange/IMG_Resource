@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, dl {
+    list-style: none;
+}
+/*容器的长宽*/
+.singer_content, .music_box, .jp-jplayer, .jp-audio, .jp-play, .jp-pause {
+    width: 250px;
+    height: 375px;
+    display: block;
+}
+/*singer_content包含背景图*/
+.singer_content {
+    overflow: hidden;
+    /*margin: 0 auto;*/
+    position: relative;
+    background-image: url(../images/huachenyu.jpg);
+    background-size: 100%;
+}
+/*歌词列表外套*/
+.lrc_wrapper {
+    width: 250px;
+    height: 178px;
+    overflow: hidden;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+}
+/*歌词列表*/
+#lrc_list {
+    margin: 10px auto;
+    background: rgba(127, 127, 127, 0.16);
+    position: absolute;
+    top: -13px;
+    left: 0;
+    z-index: 5;
+}
+/*歌词列表的每一行*/
+#lrc_list li {
+    font: normal 13px/2.1 'microsoft yahei';
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    width: 250px;
+}
+/*歌词列表的每一行显示的hover*/
+#lrc_list li.hover {
+    color: white;
+    font-size: 14px;
+    transition: all .3s linear;
+}
+
+/*按钮的框*/
+.music_box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+
+}
+/*按钮的框的hover*/
+.music_box:hover {
+    background: rgba(0, 0, 0, 0.22)
+}
+

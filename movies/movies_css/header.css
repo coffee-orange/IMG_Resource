@@ -16,27 +16,35 @@
 .top_logo{
     position: relative;
     float: left;
+    margin-left: 450px;
+}
+.top_nav{
+    position: relative;
+    float: left;
 }
 a{
     color: #fff;
     width: 75px;
     height: 38px;
-    margin-left: 20px;
-    margin-top: 25px;
+
 }
 .nav_home{
     position: relative;
     float: left;
-
+    margin-left: 20px;
+    margin-top: 25px;
 }
 .nav_content{
     position: relative;
     float: left;
-
+    margin-left: 20px;
+    margin-top: 25px;
 }
 .nav_about {
     position: relative;
     float: left;
+    margin-left: 20px;
+    margin-top: 25px;
 }
 input{
     margin-left: 50px;

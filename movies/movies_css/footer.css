@@ -1,0 +1,78 @@
+.footer{
+    width:100%;
+    height:800px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+ul li{
+   list-style-type: none;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin: 40px;
+    background-size: cover;
+}
+li img {
+    width: 250px;
+    height: 300px;
+    transition: 1s;
+}
+.pro1:active{
+    width: 910px;
+    height: 680px;
+}
+.pro1:active img{
+    width: 910px;
+    height: 680px;
+}
+.pro2:active{
+    width: 910px;
+    height: 680px;
+    margin-left: -290px;
+}
+.pro2:active img{
+    width: 910px;
+    height: 680px;
+}
+.pro3:active{
+    width: 910px;
+    height: 680px;
+    margin-left: -620px;
+}
+.pro3:active img{
+    width: 910px;
+    height: 680px;
+}
+.pro4:active{
+    width: 910px;
+    height: 680px;
+    margin-top: -340px;
+}
+.pro4:active img{
+    width: 910px;
+    height: 680px;
+}
+.pro5:active{
+    width: 910px;
+    height: 680px;
+    margin-left: -290px;
+    margin-top: -340px;
+}
+.pro5:active img{
+    width: 910px;
+    height: 680px;
+}
+.pro6:active{
+    width: 910px;
+    height: 680px;
+    margin-left: -620px;
+    margin-top: -340px;
+}
+.pro6:active img{
+    width: 910px;
+    height: 680px;
+
+}
