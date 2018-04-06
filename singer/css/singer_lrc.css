@@ -15,7 +15,7 @@ ul, ol, dl {
 /*singer_content°üº¬±³¾°Í¼*/
 .singer_content {
     overflow: hidden;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     position: relative;
     background-image: url(../images/huachenyu.jpg);
     background-size: 100%;

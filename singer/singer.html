@@ -3,47 +3,54 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>singer</title>
-
     <link rel="stylesheet" type="text/css" href="css/singer.css"/>
-    <script type="text/javascript" src="js/singer.js"></script>
+    <style type="text/css">
+        @font-face{
+            font-family: family_min;
+            font-size: 30px;
+            src:url("./font/李旭科书法1.4.ttf");
+        }
+    </style>
 </head>
+
 <body>
-<div class="pic_content ">
-    <div class="singer">
-        <span>歌手</span>
-        <span>—由心而唱，用情而歌—</span>
-    </div>
+<div class="container">
+    <div class="pic_content ">
+        <div class="singer">
+            <span>歌手</span>
+            <span>—由心而唱，用情而歌—</span>
+        </div>
 
-</div>
-<div class="pic_content">
-    <div class="word_content Menubox_on" onclick="playPause1()"  id="list1" onmouseover="setTab('list',1,3) ">
-        <audio id="audio1" width="420" >
-            <source src="audio/霍尊%20-%20卷珠帘(钢琴版).mp3" type="audio/mp4" />
-        </audio>
-        <div class="click">点我</div>
     </div>
+    <div class="pic_content">
+        <div class="word_content Menubox_on" onclick="playPause1()" id="list1" onmouseover="setTab('list',1,3) ">
+            <audio id="audio1" width="420">
+                <source src="audio/霍尊%20-%20卷珠帘(钢琴版).mp3" type="audio/mp4"/>
+            </audio>
+            <div class="click">点我</div>
+        </div>
 
-    <img src="images/huozun.jpg" class="pic1" alt=""/>
-</div>
-<div class="pic_content" onclick="playPause2()" >
-    <div class="word_content" id="list2" onmouseover="setTab('list',2,3)">
-        <audio id="audio2" width="420" >
-            <source src="audio/Bang%20Bang.mp3" type="audio/mp4" />
-        </audio>
-        <div class="click">点我</div>
+        <img src="images/huozun.jpg" class="pic1" alt=""/>
     </div>
-    <img src="images/Jessie_J.jpg" class="pic2" alt=""/>
-</div>
-<div class="pic_content" onclick="playPause3()">
-    <div class="word_content"  id="list3" onmouseover="setTab('list',3,3)">
-        <audio id="audio3" width="420" >
-           <source src="audio/华晨宇%20-%20易燃易爆炸.mp3" type="audio/mp4" />
-        </audio>
-        <div class="click">点我</div>
+    <div class="pic_content" onclick="playPause2()">
+        <div class="word_content" id="list2" onmouseover="setTab('list',2,3)">
+            <audio id="audio2" width="420">
+                <source src="audio/Bang%20Bang.mp3" type="audio/mp4"/>
+            </audio>
+            <div class="click">点我</div>
+        </div>
+        <img src="images/Jessie_J.jpg" class="pic2" alt=""/>
     </div>
-    <img src="images/huachenyu.jpg" class="pic3" alt=""/>
+    <div class="pic_content" onclick="playPause3()">
+        <div class="word_content" id="list3" onmouseover="setTab('list',3,3)">
+            <audio id="audio3" width="420">
+                <source src="audio/华晨宇%20-%20易燃易爆炸.mp3" type="audio/mp4"/>
+            </audio>
+            <div class="click">点我</div>
+        </div>
+        <img src="images/huachenyu.jpg" class="pic3" alt=""/>
+    </div>
 </div>
-
-
+<script src="js/singer.js"></script>
 </body>
 </html>

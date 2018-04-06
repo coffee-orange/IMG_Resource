@@ -5,11 +5,13 @@
 body{
     background: rgb(30, 30, 30);
 }
-@font-face {
-    font-family:family_min;
-    font-size:20px;
-    src:url(../font/李旭科书法1.4.ttf);
+.container{
+    width:100%;
+    height:800px;
+    position:relative;
+    margin:10px;
 }
+
 /*图片外套*/
 .pic_content{
     position: relative;

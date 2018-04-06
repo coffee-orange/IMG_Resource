@@ -1,7 +1,7 @@
 /**
  * Created by MIN on 2018/4/5.
  */
-window.onload = function() {
+
     var myAudio1 = document.getElementById('audio1');
     var myAudio2 = document.getElementById('audio2');
     var myAudio3 = document.getElementById('audio3');
@@ -44,5 +44,5 @@ window.onload = function() {
 //            con.style.display = i == cursel ? "block" : "none";
         }
     }
-}
+
 
